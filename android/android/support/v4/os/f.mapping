@@ -1,0 +1,5 @@
+CLASS android/support/v4/os/f
+	FIELD a field_122 I
+	FIELD b field_123 Landroid/os/Bundle;
+	FIELD c field_124 Landroid/support/v4/os/ResultReceiver;
+	METHOD run run ()V

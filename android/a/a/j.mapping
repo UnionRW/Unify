@@ -1,0 +1,20 @@
+CLASS a/a/j
+	FIELD a field_84 I
+	FIELD b field_85 I
+	FIELD c field_86 I
+	FIELD d field_87 I
+	FIELD e field_88 I
+	METHOD a method_72 ()I
+	METHOD a method_73 (I)I
+	METHOD b method_74 ()I
+	METHOD b method_75 (I)I
+	METHOD c method_76 ()V
+	METHOD d method_77 ()I
+	METHOD e method_78 ()I
+	METHOD f method_79 ()V
+	METHOD g method_80 ()I
+	METHOD h method_81 ()I
+	METHOD i method_82 ()V
+	METHOD j method_83 ()I
+	METHOD k method_84 ()I
+	METHOD l method_85 ()V

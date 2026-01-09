@@ -1,0 +1,5 @@
+CLASS a/a/e
+	FIELD a field_42 Z
+	FIELD b field_43 La/a/b;
+	FIELD j field_44 Ljava/util/ArrayList;
+	METHOD a method_28 (La/a/a/h;)V

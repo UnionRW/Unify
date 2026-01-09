@@ -1,0 +1,7 @@
+CLASS android/support/v4/os/ResultReceiver
+	FIELD a field_117 Z
+	FIELD b field_118 Landroid/os/Handler;
+	FIELD c field_119 Landroid/support/v4/os/a;
+	FIELD CREATOR CREATOR Landroid/os/Parcelable$Creator;
+	METHOD describeContents describeContents ()I
+	METHOD writeToParcel writeToParcel (Landroid/os/Parcel;I)V

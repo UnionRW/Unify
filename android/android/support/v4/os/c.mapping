@@ -1,0 +1,3 @@
+CLASS android/support/v4/os/c
+	FIELD a field_120 Landroid/os/IBinder;
+	METHOD asBinder asBinder ()Landroid/os/IBinder;

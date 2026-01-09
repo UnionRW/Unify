@@ -1,0 +1,12 @@
+CLASS a/a/p
+	FIELD a field_94 La/a/h;
+	FIELD b field_95 [B
+	FIELD c field_96 I
+	FIELD d field_97 I
+	METHOD a method_86 ()I
+	METHOD available available ()I
+	METHOD close close ()V
+	METHOD markSupported markSupported ()Z
+	METHOD read read ()I
+	METHOD read read ([B)I
+	METHOD read read ([BII)I

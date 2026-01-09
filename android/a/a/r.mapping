@@ -1,0 +1,16 @@
+CLASS a/a/r
+	FIELD a field_101 La/a/r;
+	FIELD b field_102 I
+	FIELD c field_103 I
+	FIELD d field_104 I
+	FIELD e field_105 I
+	FIELD f field_106 I
+	FIELD g field_107 I
+	FIELD h field_108 I
+	FIELD i field_109 I
+	FIELD j field_110 I
+	FIELD k field_111 I
+	FIELD l field_112 I
+	METHOD a method_87 (IIIIIIIIIII)V
+	METHOD a method_88 (Ljava/lang/String;III)V
+	METHOD toString toString ()Ljava/lang/String;
