@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/bt com/corrodinggames/rts/union/appFramework/class_50
-	FIELD a field_214 Lcom/corrodinggames/rts/appFramework/LevelSelectActivity;
-	METHOD onClick onClick (Landroid/content/DialogInterface;I)V

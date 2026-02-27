@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/bz com/corrodinggames/rts/union/appFramework/class_56
-	FIELD a field_227 Lcom/corrodinggames/rts/appFramework/by;
-	METHOD run run ()V

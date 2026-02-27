@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/logicBooleans/LogicBooleanActionFilter
-	FIELD logicBoolean logicBoolean Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;
-	FIELD target target Lcom/corrodinggames/rts/game/units/custom/j;

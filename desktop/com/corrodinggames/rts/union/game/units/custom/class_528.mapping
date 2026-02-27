@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/game/units/custom/bc com/corrodinggames/rts/union/game/units/custom/class_528
-	FIELD a field_2719 Ljava/lang/String;
-	FIELD b field_2720 Ljava/lang/String;

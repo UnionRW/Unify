@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/ic com/corrodinggames/rts/union/appFramework/class_222
-	FIELD a field_557 Lcom/corrodinggames/rts/appFramework/SettingsActivity;
-	METHOD onCheckedChanged onCheckedChanged (Landroid/widget/CompoundButton;Z)V

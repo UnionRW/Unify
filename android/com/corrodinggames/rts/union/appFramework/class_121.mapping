@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/ej com/corrodinggames/rts/union/appFramework/class_121
-	FIELD a field_327 Lcom/corrodinggames/rts/appFramework/ModsActivity;
-	METHOD run run ()V

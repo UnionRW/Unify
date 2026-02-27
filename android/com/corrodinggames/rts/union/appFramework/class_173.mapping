@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/gh com/corrodinggames/rts/union/appFramework/class_173
-	METHOD a method_158 (Lcom/corrodinggames/rts/gameFramework/j/f;)I
-	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I

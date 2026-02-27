@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/gameFramework/j/q com/corrodinggames/rts/union/gameFramework/j/class_1051
-	FIELD a field_6262 Ljava/lang/Runnable;
-	METHOD run run ()V

@@ -1,4 +1,0 @@
-CLASS com/corrodinggames/rts/gameFramework/g/c com/corrodinggames/rts/union/gameFramework/g/class_982
-	FIELD b field_5752 Ljava/lang/String;
-	FIELD c field_5753 I
-	FIELD d field_5754 Ljava/util/ArrayList;

@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/bm com/corrodinggames/rts/union/appFramework/class_43
-	FIELD a field_205 Lcom/corrodinggames/rts/appFramework/LevelGroupSelectActivity;
-	METHOD onClick onClick (Landroid/view/View;)V

@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/ey com/corrodinggames/rts/union/appFramework/class_136
-	FIELD a field_415 Lcom/corrodinggames/rts/appFramework/ex;
-	METHOD onClick onClick (Landroid/content/DialogInterface;I)V

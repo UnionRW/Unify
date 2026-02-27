@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/go com/corrodinggames/rts/union/appFramework/class_180
-	FIELD a field_498 Lcom/corrodinggames/rts/appFramework/MultiplayerLobbyActivity;
-	METHOD run run ()V

@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/et com/corrodinggames/rts/union/appFramework/class_131
-	FIELD a field_406 Lcom/corrodinggames/rts/appFramework/MultiplayerBattleroomActivity;
-	METHOD run run ()V

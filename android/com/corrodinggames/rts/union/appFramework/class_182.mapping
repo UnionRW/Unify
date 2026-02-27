@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/gq com/corrodinggames/rts/union/appFramework/class_182
-	FIELD a field_500 Lcom/corrodinggames/rts/appFramework/MultiplayerLobbyActivity;
-	METHOD onClick onClick (Landroid/content/DialogInterface;I)V

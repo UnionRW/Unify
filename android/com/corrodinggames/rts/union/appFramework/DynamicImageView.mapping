@@ -1,6 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/DynamicImageView com/corrodinggames/rts/union/appFramework/DynamicImageView
-	FIELD maxFixedHeight maxFixedHeight I
-	FIELD widthResize widthResize Z
-	METHOD onMeasure onMeasure (II)V
-	METHOD setMaxFixedHeight setMaxFixedHeight (I)V
-	METHOD setResizeWidth setResizeWidth (Z)V

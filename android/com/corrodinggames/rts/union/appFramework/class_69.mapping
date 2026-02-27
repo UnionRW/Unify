@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/cl com/corrodinggames/rts/union/appFramework/class_69
-	FIELD a field_247 Lcom/corrodinggames/rts/appFramework/LoadLevelActivity;
-	METHOD onClick onClick (Landroid/view/View;)V

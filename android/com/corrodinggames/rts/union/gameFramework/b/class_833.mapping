@@ -1,4 +1,0 @@
-CLASS com/corrodinggames/rts/gameFramework/b/m com/corrodinggames/rts/union/gameFramework/b/class_833
-	METHOD a method_1924 ()Ljava/lang/String;
-	METHOD a method_1925 (ILcom/corrodinggames/rts/gameFramework/b/ad;)V
-	METHOD b method_1926 ()Ljava/lang/String;

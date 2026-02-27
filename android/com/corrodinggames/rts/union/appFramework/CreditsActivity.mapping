@@ -1,3 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/CreditsActivity com/corrodinggames/rts/union/appFramework/CreditsActivity
-	METHOD onCreate onCreate (Landroid/os/Bundle;)V
-	METHOD onPause onPause ()V

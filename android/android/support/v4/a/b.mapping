@@ -1,5 +1,0 @@
-CLASS android/support/v4/a/b
-	FIELD a field_113 [Ljava/lang/String;
-	FIELD b field_114 Landroid/app/Activity;
-	FIELD c field_115 I
-	METHOD run run ()V

@@ -1,3 +1,0 @@
-CLASS android/support/v4/os/d
-	METHOD createFromParcel createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
-	METHOD newArray newArray (I)[Ljava/lang/Object;

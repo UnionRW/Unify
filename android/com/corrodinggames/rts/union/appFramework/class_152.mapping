@@ -1,4 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/fn com/corrodinggames/rts/union/appFramework/class_152
-	FIELD a field_445 Landroid/widget/EditText;
-	FIELD b field_446 Lcom/corrodinggames/rts/gameFramework/j/ao;
-	METHOD onClick onClick (Landroid/content/DialogInterface;I)V

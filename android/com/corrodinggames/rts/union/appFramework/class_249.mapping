@@ -1,4 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/n com/corrodinggames/rts/union/appFramework/class_249
-	FIELD a field_599 [I
-	FIELD b field_600 Lcom/corrodinggames/rts/appFramework/GLSurfaceViewShared;
-	METHOD a method_163 (Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;[Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLConfig;

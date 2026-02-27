@@ -1,5 +1,0 @@
-CLASS com/corrodinggames/rts/appFramework/a com/corrodinggames/rts/union/appFramework/class_1
-	FIELD resumeCallbacks resumeCallbacks Ljava/util/ArrayList;
-	METHOD addResumeCallback addResumeCallback (Ljava/lang/Runnable;)V
-	METHOD onRequestPermissionsResult onRequestPermissionsResult (I[Ljava/lang/String;[I)V
-	METHOD onResume onResume ()V
