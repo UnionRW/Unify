@@ -38,11 +38,11 @@ c	com/corrodinggames/rts/appFramework/class_84	com/corrodinggames/rts/appFramewo
 c	com/corrodinggames/rts/appFramework/class_127	com/corrodinggames/rts/appFramework/CurrTouchPoint
 	m	()F	method_147	x
 	m	()F	method_150	y
-c	com/corrodinggames/rts/game/a/class_263	com/corrodinggames/rts/game/a/a
+c	com/corrodinggames/rts/game/a/class_263	com/corrodinggames/rts/game/a/class_263
 	f	Lcom/corrodinggames/rts/game/a/class_287;	field_710	attackingUnitsLand
 	f	Lcom/corrodinggames/rts/game/a/class_287;	field_711	attackingUnitsHover
 	m	()V	method_190	reloadUnits
-c	com/corrodinggames/rts/game/b/class_298	com/corrodinggames/rts/game/b/a
+c	com/corrodinggames/rts/game/b/class_298	com/corrodinggames/rts/game/b/class_298
 	f	Ljava/lang/String;	field_859	name
 	f	Ljava/lang/String;	field_860	lowerCaseName
 	f	Ljava/lang/String;	field_861	type
@@ -73,7 +73,7 @@ c	com/corrodinggames/rts/game/b/class_299	com/corrodinggames/rts/game/maps/RwTil
 	m	(Ljava/lang/String;)Ljava/io/InputStream;	method_335	openMapFileWithAbstractPath
 	m	()F	method_340	getMapWidth
 	m	()F	method_342	getMapHeight
-c	com/corrodinggames/rts/game/b/class_302	com/corrodinggames/rts/game/b/e
+c	com/corrodinggames/rts/game/b/class_302	com/corrodinggames/rts/game/b/class_302
 	m	()F	method_356	getEffectiveZoomLevel
 c	com/corrodinggames/rts/game/b/class_304	com/corrodinggames/rts/game/maps/Layer
 	f	I	field_995	width
@@ -611,7 +611,7 @@ c	com/corrodinggames/rts/game/units/custom/a/a/class_446	com/corrodinggames/rts/
 	f	Lcom/corrodinggames/rts/game/units/custom/class_590;	field_2150	addWaypointTriggerActionIfFailed
 	f	Lcom/corrodinggames/rts/game/units/custom/class_590;	field_2151	addWaypointTriggerActionIfMatched
 	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/class_462;)V	method_1095	parser
-c	com/corrodinggames/rts/game/units/custom/a/a/class_447	com/corrodinggames/rts/game/units/custom/a/a/c
+c	com/corrodinggames/rts/game/units/custom/a/a/class_447	com/corrodinggames/rts/game/units/custom/a/a/class_447
 	f	Z	field_2154	addWaypointTargetMapMustBeReachable
 	f	Lcom/corrodinggames/rts/game/units/custom/class_577;	field_2155	addWaypointTargetRandomUnitTagged
 	f	F	field_2156	addWaypointTargetRandomUnitMaxRange
@@ -695,7 +695,7 @@ c	com/corrodinggames/rts/game/units/custom/a/a/class_459	com/corrodinggames/rts/
 	f	Z	field_2249	forceUnloadTransportNow
 	f	I	field_2250	forceUnloadTransportNowOnlyOnSlot
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2251	transportTargetNow
-c	com/corrodinggames/rts/game/units/custom/a/class_461	com/corrodinggames/rts/game/units/custom/a/c
+c	com/corrodinggames/rts/game/units/custom/a/class_461	com/corrodinggames/rts/game/units/custom/a/class_461
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2255	isVisible
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2256	isLocked
 	f	Lcom/corrodinggames/rts/game/units/custom/class_475;	field_2257	isLockedMessage
@@ -886,7 +886,7 @@ c	com/corrodinggames/rts/game/units/custom/class_488	com/corrodinggames/rts/game
 c	com/corrodinggames/rts/game/units/custom/class_489	com/corrodinggames/rts/game/units/custom/MoveSpeed
 c	com/corrodinggames/rts/game/units/custom/class_490	com/corrodinggames/rts/game/units/custom/MaxTurnSpeed
 c	com/corrodinggames/rts/game/units/custom/class_491	com/corrodinggames/rts/game/units/custom/FogOfWarsightRange
-c	com/corrodinggames/rts/game/units/custom/class_492	com/corrodinggames/rts/game/units/custom/b
+c	com/corrodinggames/rts/game/units/custom/class_492	com/corrodinggames/rts/game/units/custom/class_492
 	f	Lcom/corrodinggames/rts/game/units/custom/class_595;	field_2483	name
 c	com/corrodinggames/rts/game/units/custom/b/class_493	com/corrodinggames/rts/game/units/custom/b/AbstractSectionParser
 c	com/corrodinggames/rts/game/units/custom/b/class_495	com/corrodinggames/rts/game/units/custom/b/DecalSectionParser
@@ -952,13 +952,13 @@ c	com/corrodinggames/rts/game/units/custom/b/class_496	com/corrodinggames/rts/ga
 	f	Z	field_2524	alwaysStartDirAtZero
 	f	Z	field_2525	alwaysStartHeightAtZero
 c	com/corrodinggames/rts/game/units/custom/b/class_498	com/corrodinggames/rts/game/units/custom/b/DecalLayer
-c	com/corrodinggames/rts/game/units/custom/b/class_502	com/corrodinggames/rts/game/units/custom/b/j
+c	com/corrodinggames/rts/game/units/custom/b/class_502	com/corrodinggames/rts/game/units/custom/b/class_502
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2599	enabled
 	f	F	field_2600	speed
 	f	F	field_2601	maxSpeed
 	f	Lcom/corrodinggames/rts/game/units/custom/class_577;	field_2602	notherUnitHasTag
 	f	Z	field_2603	onlySameTeam
-c	com/corrodinggames/rts/game/units/custom/b/class_504	com/corrodinggames/rts/game/units/custom/b/l
+c	com/corrodinggames/rts/game/units/custom/b/class_504	com/corrodinggames/rts/game/units/custom/b/class_504
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2606	enabled
 	f	F	field_2607	speed
 	f	F	field_2608	maxSpeed
@@ -1665,9 +1665,9 @@ c	com/corrodinggames/rts/game/units/custom/class_591	com/corrodinggames/rts/game
 	m	()V	method_1509	tryLoadUnitType
 	m	()Lcom/corrodinggames/rts/game/units/class_704;	method_1511	getUnit
 	m	()Ljava/lang/String;	method_1512	getUnitName
-c	com/corrodinggames/rts/game/units/custom/class_593	com/corrodinggames/rts/game/units/custom/x
+c	com/corrodinggames/rts/game/units/custom/class_593	com/corrodinggames/rts/game/units/custom/class_593
 	f	Ljava/lang/String;	field_3596	name
-c	com/corrodinggames/rts/game/units/custom/class_595	com/corrodinggames/rts/game/units/custom/z
+c	com/corrodinggames/rts/game/units/custom/class_595	com/corrodinggames/rts/game/units/custom/class_595
 	f	Lcom/corrodinggames/rts/game/units/custom/class_581;	field_3601	effects
 	m	(FFFFLcom/corrodinggames/rts/gameFramework/class_773;)Lcom/corrodinggames/rts/gameFramework/d/class_894;	method_1514	createEffectEmitter
 	m	(FFFFLcom/corrodinggames/rts/gameFramework/class_773;IS)Lcom/corrodinggames/rts/gameFramework/d/class_894;	method_1515	createEffectEmitter
@@ -1737,7 +1737,7 @@ c	com/corrodinggames/rts/game/units/d/class_638	com/corrodinggames/rts/game/unit
 	m	(Lcom/corrodinggames/rts/game/units/a/class_333;Z)I	a	getQueueNumberBy
 c	com/corrodinggames/rts/game/units/d/class_639	com/corrodinggames/rts/game/units/buildings/ActionFinishedResult
 	f	Lcom/corrodinggames/rts/game/units/a/class_333;	field_3773	actionId
-c	com/corrodinggames/rts/game/units/d/class_640	com/corrodinggames/rts/game/units/d/r
+c	com/corrodinggames/rts/game/units/d/class_640	com/corrodinggames/rts/game/units/d/class_640
 	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_3780	queueItems
 	m	(Lcom/corrodinggames/rts/game/units/a/class_353;ZLandroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/class_426;)Lcom/corrodinggames/rts/game/units/d/class_639;	method_1591	alsoQueueAction
 	m	(Z)V	method_1600	removeAllQueuedItems
@@ -1874,9 +1874,9 @@ c	com/corrodinggames/rts/game/units/f/class_716	com/corrodinggames/rts/game/unit
 	f	F	field_4016	rectTop
 	f	F	field_4017	rectBottom
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)Z	a	read
-c	com/corrodinggames/rts/game/units/g/class_720	com/corrodinggames/rts/game/units/g/a
+c	com/corrodinggames/rts/game/units/g/class_720	com/corrodinggames/rts/game/units/g/class_720
 	f	I	field_4028	cooldownTime
-c	com/corrodinggames/rts/game/units/g/class_726	com/corrodinggames/rts/game/units/g/g
+c	com/corrodinggames/rts/game/units/g/class_726	com/corrodinggames/rts/game/units/g/class_726
 	m	(Lcom/corrodinggames/rts/game/units/class_409;Lcom/corrodinggames/rts/game/units/a/class_333;I)V	method_1723	addActionCooldownTime
 c	com/corrodinggames/rts/game/units/class_727	com/corrodinggames/rts/game/units/EditorOrBuilder
 	f	Lcom/corrodinggames/rts/game/units/a/class_349;	field_4035	enableAIDebug
@@ -2068,7 +2068,7 @@ c	com/corrodinggames/rts/gameFramework/class_887	com/corrodinggames/rts/gameFram
 c	com/corrodinggames/rts/gameFramework/class_888	com/corrodinggames/rts/gameFramework/TimeCalculationArrays
 c	com/corrodinggames/rts/gameFramework/class_889	com/corrodinggames/rts/gameFramework/UnitData
 	f	Lcom/corrodinggames/rts/game/units/class_428;	field_4888	movementType
-c	com/corrodinggames/rts/gameFramework/d/class_890	com/corrodinggames/rts/gameFramework/d/a
+c	com/corrodinggames/rts/gameFramework/d/class_890	com/corrodinggames/rts/gameFramework/d/class_890
 	m	(F)V	method_2078	update
 c	com/corrodinggames/rts/gameFramework/d/class_892	com/corrodinggames/rts/gameFramework/emitter/EffectManager
 	f	I	field_4926	activeEffectCount
@@ -2109,7 +2109,7 @@ c	com/corrodinggames/rts/gameFramework/d/class_892	com/corrodinggames/rts/gameFr
 	m	(FFFI)Lcom/corrodinggames/rts/gameFramework/d/class_894;	method_2117	createShockwave
 	m	(FFF)Lcom/corrodinggames/rts/gameFramework/d/class_894;	method_2118	createExplosionBitsEffect
 	m	(FFFF)Lcom/corrodinggames/rts/gameFramework/d/class_894;	method_2119	createExplosionEffect
-c	com/corrodinggames/rts/gameFramework/d/class_893	com/corrodinggames/rts/gameFramework/d/d
+c	com/corrodinggames/rts/gameFramework/d/class_893	com/corrodinggames/rts/gameFramework/d/class_893
 	f	I	field_4951	dir
 c	com/corrodinggames/rts/gameFramework/d/class_894	com/corrodinggames/rts/gameFramework/emitter/EffectEmitter
 	f	Z	field_4992	haveAnimate
@@ -2260,7 +2260,7 @@ c	com/corrodinggames/rts/gameFramework/class_907	com/corrodinggames/rts/gameFram
 	m	(Ljava/lang/String;)Ljava/lang/Float;	method_2348	readAsFloat
 	m	(Ljava/lang/String;)Ljava/lang/String;	method_2350	extractQuotedString
 	m	(Ljava/lang/String;)Ljava/lang/String;	method_2351	removeEscapeCharacters
-c	com/corrodinggames/rts/gameFramework/f/class_908	com/corrodinggames/rts/gameFramework/f/a
+c	com/corrodinggames/rts/gameFramework/f/class_908	com/corrodinggames/rts/gameFramework/f/class_908
 	f	Lcom/corrodinggames/rts/gameFramework/f/class_961;	field_5182	interfaceEngine
 	f	Ljava/lang/String;	field_5195	tipContent
 	f	F	field_5196	tipLife
@@ -2299,7 +2299,7 @@ c	com/corrodinggames/rts/gameFramework/f/class_967	com/corrodinggames/rts/gameFr
 c	com/corrodinggames/rts/gameFramework/f/class_968	com/corrodinggames/rts/gameFramework/Interface/ChatMessage
 	f	I	field_5651	delayPerChar
 	f	I	field_5652	textColor
-c	com/corrodinggames/rts/gameFramework/f/class_969	com/corrodinggames/rts/gameFramework/f/q
+c	com/corrodinggames/rts/gameFramework/f/class_969	com/corrodinggames/rts/gameFramework/f/class_969
 	m	(F)V	method_2599	update
 c	com/corrodinggames/rts/gameFramework/class_979	com/corrodinggames/rts/gameFramework/GetSystemCpuFile
 c	com/corrodinggames/rts/gameFramework/class_987	com/corrodinggames/rts/gameFramework/GameThreadDebug
@@ -2378,7 +2378,7 @@ c	com/corrodinggames/rts/gameFramework/j/class_1044	com/corrodinggames/rts/gameF
 	m	()V	method_2931	setMainStream
 c	com/corrodinggames/rts/gameFramework/j/class_1047	com/corrodinggames/rts/gameFramework/net/GameNetAPIOperate
 	f	[Ljava/lang/String;	field_6252	urlList
-c	com/corrodinggames/rts/gameFramework/j/class_1048	com/corrodinggames/rts/gameFramework/j/n
+c	com/corrodinggames/rts/gameFramework/j/class_1048	com/corrodinggames/rts/gameFramework/j/class_1048
 	m	()Ljava/lang/Object;	call	mo26call
 c	com/corrodinggames/rts/gameFramework/class_1061	com/corrodinggames/rts/gameFramework/GameEngine
 	f	Lcom/corrodinggames/rts/gameFramework/class_1061;	field_6315	globalGameEngine
@@ -2522,7 +2522,7 @@ c	com/corrodinggames/rts/gameFramework/m/class_1233	com/corrodinggames/rts/gameF
 	m	(F)V	method_3331	setTextSize
 	m	(F)V	setTextSize	setTextSizeWithCheck
 c	com/corrodinggames/rts/gameFramework/class_1254	com/corrodinggames/rts/gameFramework/ShowMessage
-c	com/corrodinggames/rts/gameFramework/n/class_1255	com/corrodinggames/rts/gameFramework/n/a
+c	com/corrodinggames/rts/gameFramework/n/class_1255	com/corrodinggames/rts/gameFramework/n/class_1255
 	m	()I	method_3411	centerX
 	m	()I	method_3417	centerY
 	m	(Ljava/lang/String;I)I	method_3420	getValueAsTime
@@ -2551,7 +2551,7 @@ c	com/corrodinggames/rts/gameFramework/n/class_1269	com/corrodinggames/rts/gameF
 c	com/corrodinggames/rts/gameFramework/n/class_1270	com/corrodinggames/rts/gameFramework/status/MapText
 c	com/corrodinggames/rts/gameFramework/n/class_1271	com/corrodinggames/rts/gameFramework/status/MoveCameraEvent
 c	com/corrodinggames/rts/gameFramework/n/class_1272	com/corrodinggames/rts/gameFramework/status/TriggerUnitDetect
-c	com/corrodinggames/rts/gameFramework/n/class_1273	com/corrodinggames/rts/gameFramework/n/p
+c	com/corrodinggames/rts/gameFramework/n/class_1273	com/corrodinggames/rts/gameFramework/n/class_1273
 	m	(F)V	method_3449	mapEventObjectPaser
 	m	(Ljava/lang/String;)V	method_3458	logMapScriptError
 c	com/corrodinggames/rts/gameFramework/class_1281	com/corrodinggames/rts/gameFramework/ShowMessageA
