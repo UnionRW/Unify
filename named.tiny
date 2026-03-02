@@ -14,7 +14,6 @@ c	a/a/a/g	net/rudp/a/SYNSegment
 c	a/a/a/h	net/rudp/a/Segment
 	m	(I)V	method_2	setAck
 	m	(III)V	method_3	init
-c	a/a/a/i	net/rudp/a/RunnableC0006i
 c	a/a/b	net/rudp/ReliableServerSocket
 c	a/a/h	net/rudp/ReliableSocket
 c	a/a/p	net/rudp/ReliableSocketInputStream
@@ -301,7 +300,7 @@ c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/Player
 	f	Lcom/corrodinggames/rts/game/class_324;	field_1453	aggressiveTeam
 	f	Lcom/corrodinggames/rts/game/class_324;	field_1454	neutralTeam
 	f	Z	field_1406	teamDefeatedTech
-	f	[Lcom/corrodinggames/rts/game/class_324;	field_1455	allTeamIndex
+	f	[Lcom/corrodinggames/rts/game/class_324;	field_1455	allPlayer
 	f	Z	field_1407	teamWipedOut
 	f	Z	field_1408	teamVictory
 	f	I	field_1457	site
@@ -310,6 +309,7 @@ c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/Player
 	f	D	field_1461	credits
 	f	D	field_1462	antiLagCredits
 	f	I	field_1464	team
+	f	I	field_1448	maxTeamId
 	f	Lcom/corrodinggames/rts/game/units/class_409;	field_1466	thisUnit
 	f	Ljava/lang/String;	field_1468	name
 	f	I	field_1423	ping
@@ -320,7 +320,7 @@ c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/Player
 	m	(Lcom/corrodinggames/rts/game/class_324;)Z	method_489	isEnemyTeam
 	m	(Lcom/corrodinggames/rts/game/class_324;)Z	method_503	isSameTeam
 	m	(I)Z	method_517	hasEnoughCreditsWithAntiLag
-	m	(I)Lcom/corrodinggames/rts/game/class_324;	method_526	getTeamId
+	m	(I)Lcom/corrodinggames/rts/game/class_324;	method_526	getPlayer
 	m	()I	method_539	getPing
 	m	()F	method_542	aIHandicaps
 c	com/corrodinggames/rts/game/class_325	com/corrodinggames/rts/game/TeamColorsHueType
@@ -2170,11 +2170,65 @@ c	com/corrodinggames/rts/gameFramework/d/class_896	com/corrodinggames/rts/gameFr
 	f	Lcom/corrodinggames/rts/gameFramework/m/class_1189;	field_5071	imageShadow
 c	com/corrodinggames/rts/gameFramework/d/class_897	com/corrodinggames/rts/gameFramework/emitter/EffectPriority
 	m	(Lcom/corrodinggames/rts/gameFramework/d/class_897;)Z	method_2132	isLowerThan
-c	com/corrodinggames/rts/gameFramework/class_898	com/corrodinggames/rts/gameFramework/SyncPacket
-	f	I	field_5084	localTick
-	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1030;)V	method_2141	write
-	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1044;)V	method_2142	read
-	m	()Lcom/corrodinggames/rts/gameFramework/class_898;	method_2151	clone
+c	com/corrodinggames/rts/gameFramework/class_898	com/corrodinggames/rts/gameFramework/Command
+	f	Z	field_5082	isReplayCommand
+	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_5081	pendingUnitIds
+	f	Ljava/lang/String;	field_5083	debugStackTrace
+	f	I	field_5084	scheduledTick
+	f	I	field_5085	createdTick
+	f	Z	field_5086	isQueued
+	f	Z	field_5087	isInstantCommand
+	f	Z	field_5088	stopCurrentAction
+	f	Z	field_5089	isHighPriority
+	f	Lcom/corrodinggames/rts/game/class_324;	field_5090	team
+	f	Lcom/corrodinggames/rts/game/units/class_706;	field_5091	unitCommand
+	f	Lcom/corrodinggames/rts/game/units/a/class_333;	field_5092	actionId
+	f	Landroid/graphics/PointF;	field_5093	targetPoint
+	f	Lcom/corrodinggames/rts/game/units/class_426;	field_5094	targetUnit
+	f	Lcom/corrodinggames/rts/game/units/class_330;	field_5095	attackMode
+	f	Z	field_5097	isSystemCommand
+	f	Lcom/corrodinggames/rts/game/class_324;	field_5098	sourceTeam
+	f	S	field_5099	commandFlags
+	f	Z	field_5100	isSystemAction
+	f	F	field_5101	gameSpeedChange
+	f	F	field_5102	systemFloat
+	f	I	field_5103	systemActionType
+	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_5104	selectedUnits
+	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_5105	commandTargets
+	f	Z	field_5106	hasProcessedTargets
+	f	Lcom/corrodinggames/rts/gameFramework/class_873;	field_5107	commandController
+	f	Landroid/graphics/PointF;	z	rallyPoint
+	m	()Z	method_2133	validateTargets
+	m	(FF)V	method_2134	setTargetPosition
+	m	(FFLcom/corrodinggames/rts/game/units/class_704;I)V	method_2135	setBuildTarget
+	m	(FFZ)V	method_2136	setAttackMoveTarget
+	m	(Landroid/graphics/PointF;)V	a	setPoint
+	m	(Lcom/corrodinggames/rts/game/units/class_330;)V	a	setTargetMode
+	m	(Lcom/corrodinggames/rts/game/units/a/class_333;)V	a	setActionId
+	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_2140	setAttackMode
+	m	(Lcom/corrodinggames/rts/game/units/class_426;Z)V	a	setAttackTarget
+	m	(Lcom/corrodinggames/rts/game/units/class_409;)V	method_2139	setTargetUnit
+	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1030;)V	method_2141	serializeCommand
+	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1044;)V	method_2142	setUnitCommand
+	m	(Ljava/util/AbstractList;)V	a	addUnitsToCommand
+	m	()V	method_2143	processCommandTargets
+	m	(FF)V	method_2144	setAttackPosition
+	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_2145	setRepairTarget
+	m	()Lcom/corrodinggames/rts/game/class_324;	c	getTeam
+	m	(FF)V	c	setPatrolTarget
+	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_2148	setGuardTarget
+	m	()I	method_2146	getActionId
+	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_2150	setReclaimTarget
+	m	()Z	method_2149	isSystemCommand
+	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_2152	setLoadIntoTarget
+	m	()Lcom/corrodinggames/rts/gameFramework/class_898;	method_2151	cloneCommand
+	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_2154	setLoadUpTarget
+	m	()V	method_2153	executeSystemCommand
+	m	()V	h	executeUnitCommand
+	m	()V	method_2158	deserializeCommand
+	m	()V	method_2155	debugPrintCommand
+	m	()V	method_2156	executeCommand
+	m	()Z	method_2157	hasValidTargets
 c	com/corrodinggames/rts/gameFramework/e/class_899	com/corrodinggames/rts/gameFramework/file/FileSystem
 	f	Lcom/corrodinggames/rts/gameFramework/e/class_901;	field_5108	DEFAULT_FILE_LOADER
 	f	Lcom/corrodinggames/rts/gameFramework/e/class_901;	field_5109	currentFileLoader
@@ -2683,3 +2737,54 @@ c	com/corrodinggames/rts/gameFramework/class_1335	com/corrodinggames/rts/gameFra
 c	com/corrodinggames/rts/gameFramework/class_1336	com/corrodinggames/rts/gameFramework/CreateNewGameEngineAbstract
 c	com/corrodinggames/rts/gameFramework/class_1337	com/corrodinggames/rts/gameFramework/KeyState
 c	com/corrodinggames/rts/gameFramework/class_1338	com/corrodinggames/rts/gameFramework/PoolIterateRunner
+c	com/corrodinggames/rts/gameFramework/j/class_1037	com/corrodinggames/rts/gameFramework/net/NetworkConnection
+	f	Z	field_6166	isDisconnecting
+	f	Z	field_6167	disconnectRequested
+	f	I	field_6168	connectionId
+	f	Ljava/net/Socket;	field_6169	socket
+	f	Ljava/net/InetAddress;	field_6170	inetAddress
+	f	Ljava/util/concurrent/ConcurrentLinkedQueue;	field_6171	sendQueue
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1038;	field_6148	receiveWorker
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1039;	field_6149	sendWorker
+	f	Ljava/lang/Thread;	field_6150	receiveThread
+	f	Ljava/lang/Thread;	field_6151	sendThread
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1037;	field_6175	relayConnection
+	f	Z	field_6152	isInputClosed
+	f	Z	field_6153	isOutputClosed
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1032;	field_6177	lastPacket
+	f	I	field_6155	sessionRandomId
+	f	Ljava/lang/String;	field_6179	forwardedIpAddress
+	f	Z	field_6181	allowLargeIncomingPackets
+	f	I	field_6158	bytesReadIterations
+	f	Z	field_6182	trackLastPacket
+	f	Z	field_6183	optimizeSplitContinuation
+	f	I	R	commandCounter
+	f	Z	field_6184	isRelayServer
+	f	J	S	commandWindowStartMs
+	f	Z	field_6185	isRelayLinked
+	f	Z	T	commandLimitReached
+	f	Z	field_6186	isDirectClient
+	f	I	field_6163	bytesReadTotalCurrentPacket
+	f	Z	field_6187	isDirectServer
+	f	I	field_6164	bytesReadSoFar
+	f	Z	field_6188	isForwarded
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1001;	field_6165	networkEngine
+	f	Lcom/corrodinggames/rts/game/class_313;	field_6142	player
+	m	()Z	a	disconnectWithMessage
+	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1032;)V	method_2894	enqueuePacket
+	m	(Ljava/lang/String;)V	method_2895	handleRemoteDisconnect
+	m	(Ljava/lang/String;Ljava/lang/Throwable;)V	a	logErrorWithException
+	m	(ZZ)V	a	handleTimeoutDisconnect
+	m	(ZZLjava/lang/String;)V	method_2897	sendPacket
+	m	()I	method_2893	logDebug
+	m	(Ljava/lang/String;)V	method_2899	getRecentPingMs
+	m	()I	method_2898	getPlayerTeamId
+	m	(Ljava/lang/String;)V	method_2901	logInfo
+	m	()V	method_2900	startWorkers
+	m	(Ljava/lang/String;)Ljava/lang/String;	method_2903	formatLogPrefix
+	m	()Ljava/lang/String;	method_2902	getPlayerDisplayName
+	m	()Ljava/lang/String;	method_2904	getIpAddress
+	m	()Ljava/lang/String;	method_2905	getDisplayIpAddress
+	m	()Z	method_2906	isConnected
+	m	()V	method_2907	performDisconnectCleanup
+	m	()V	method_2908	requestLocalDisconnect
