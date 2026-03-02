@@ -290,7 +290,7 @@ c	com/corrodinggames/rts/game/class_320	com/corrodinggames/rts/game/DrawableShad
 	f	Lcom/corrodinggames/rts/gameFramework/m/class_1231;	field_1374	shader
 c	com/corrodinggames/rts/game/class_322	com/corrodinggames/rts/game/ScorchMark
 	m	()V	method_441	load
-c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/PlayerData
+c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/Player
 	f	Ljava/lang/Integer;	field_1398	aiDifficulty
 	f	J	field_1425	lastReciveTime
 	f	Lcom/corrodinggames/rts/game/units/custom/class_577;	field_1438	teamTagList
@@ -1639,8 +1639,6 @@ c	com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$Fun
 c	com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionMin	com/corrodinggames/rts/game/units/custom/logicBooleans/LogicNumberFunction$FunctionMin
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	a	first
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	b	second
-c	com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$ReadUnitMemoryLogicBoolean	com/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$ReadUnitMemoryLogicBoolean
-	m	(Ljava/lang/String;)V	type	setType
 c	com/corrodinggames/rts/game/units/custom/class_583	com/corrodinggames/rts/game/units/custom/AnimationTriggerOnAction
 c	com/corrodinggames/rts/game/units/custom/class_584	com/corrodinggames/rts/game/units/custom/AnimationId
 c	com/corrodinggames/rts/game/units/custom/class_587	com/corrodinggames/rts/game/units/custom/AutoTriggerAction
@@ -2332,7 +2330,7 @@ c	com/corrodinggames/rts/gameFramework/i/class_992	com/corrodinggames/rts/gameFr
 	m	()Lcom/corrodinggames/rts/gameFramework/utility/class_1297;	method_2694	getModInfoReader
 c	com/corrodinggames/rts/gameFramework/class_995	com/corrodinggames/rts/gameFramework/AutoUpdateModLastModified
 c	com/corrodinggames/rts/gameFramework/j/class_998	com/corrodinggames/rts/gameFramework/net/ListOperateUpdateRoom
-c	com/corrodinggames/rts/gameFramework/j/class_1001	com/corrodinggames/rts/gameFramework/net/GameNetEngine
+c	com/corrodinggames/rts/gameFramework/j/class_1001	com/corrodinggames/rts/gameFramework/net/NetworkEngine
 	f	I	field_5918	desyncErrorCount
 	f	Ljava/lang/Object;	field_5892	indexSync
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1011;	field_5933	enterPasswordCallback
