@@ -2412,15 +2412,26 @@ c	com/corrodinggames/rts/gameFramework/j/class_998	com/corrodinggames/rts/gameFr
 c	com/corrodinggames/rts/gameFramework/j/class_1001	com/corrodinggames/rts/gameFramework/net/NetworkEngine
 	f	F	field_5858	currentStepRate
 	f	I	field_5873	loaclTick
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1015;	field_5874	roomSettings
 	f	Ljava/lang/Object;	field_5892	indexSync
 	f	I	field_5918	desyncErrorCount
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1011;	field_5933	enterPasswordCallback
 	m	(Ljava/lang/String;Ljava/lang/String;)V	method_2751	showChatMessage
 	m	(Ljava/lang/String;Z)V	method_2752	handleDesyncError
+	m	(Lcom/corrodinggames/rts/game/class_324;)Lcom/corrodinggames/rts/gameFramework/j/class_1037;	method_2775	getConnection
+	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1032;)V	method_2777	sendPacketToClients
+	m	(Z)V	method_2782	pause
+	m	(Lcom/corrodinggames/rts/game/class_324;)V	method_2785	kickTeamAndAttachedPlayer
 	m	(Ljava/lang/String;)V	method_2796	logDesyncWarning
 	m	(Ljava/lang/String;)V	method_2803	logDesyncError
+	m	()J	method_2807	getNextUnitId
+	m	(Ljava/lang/String;)V	method_2809	sendSystemMessage
+	m	(Ljava/lang/String;)V	method_2812	quickCommand
+	m	(Ljava/lang/String;)V	method_2816	sendChatMessage
+	m	()V	method_2817	sendChecksum
+	m	()Z	method_2819	shouldGameBePaused
 c	com/corrodinggames/rts/gameFramework/j/class_1011	com/corrodinggames/rts/gameFramework/net/EnterPasswordCallback
-c	com/corrodinggames/rts/gameFramework/j/class_1015	com/corrodinggames/rts/gameFramework/net/GameMapData
+c	com/corrodinggames/rts/gameFramework/j/class_1015	com/corrodinggames/rts/gameFramework/net/RoomSettings
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1016;	field_6012	mapType
 	f	Ljava/lang/String;	field_6013	mapName
 	f	I	field_6014	credits
