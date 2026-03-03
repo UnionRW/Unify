@@ -1105,6 +1105,7 @@ c	com/corrodinggames/rts/game/n	com/corrodinggames/rts/game/class_324
 	f	J	Y	field_1426
 	f	Ljava/lang/Integer;	z	field_1398
 	f	I	Z	field_1427
+	m	(I)Ljava/lang/String;	a	method_467
 	m	(D)Z	a	method_465
 	m	(F)V	a	method_466
 	m	(IZ)I	a	method_468
