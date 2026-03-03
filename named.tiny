@@ -1789,7 +1789,6 @@ c	com/corrodinggames/rts/game/units/e/class_677	com/corrodinggames/rts/game/unit
 	f	Lcom/corrodinggames/rts/game/units/a/class_349;	field_3834	reclaimBuildingTargetAction
 	m	(Ljava/util/ArrayList;)V	method_1627	getCanBuildList
 	m	()Ljava/util/ArrayList;	N	getUnitActionList
-	m	()Lcom/corrodinggames/rts/game/units/class_704;	q	getThisUnit
 c	com/corrodinggames/rts/game/units/e/class_678	com/corrodinggames/rts/game/units/land/ExperimentalHoverTank
 c	com/corrodinggames/rts/game/units/e/class_679	com/corrodinggames/rts/game/units/land/ExperimentalTank
 c	com/corrodinggames/rts/game/units/e/class_680	com/corrodinggames/rts/game/units/land/HeavyHoverTank
