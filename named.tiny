@@ -785,7 +785,7 @@ c	com/corrodinggames/rts/game/units/custom/b/class_495	com/corrodinggames/rts/ga
 	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_2492	beforeBodyLayerDecals
 	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_2493	afterBodyLayerDecals
 	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_2494	beforeUILayerDecals
-	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;)V	method_1192	parser
+	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;)V	method_1192	parse
 c	com/corrodinggames/rts/game/units/custom/b/class_496	com/corrodinggames/rts/game/units/custom/b/Decal
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2500	stackIndexStart
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2501	stackIndexCount
@@ -852,7 +852,7 @@ c	com/corrodinggames/rts/game/units/custom/b/class_504	com/corrodinggames/rts/ga
 	f	F	field_2608	maxSpeed
 	f	I	field_2609	awayFromEdge
 c	com/corrodinggames/rts/game/units/custom/b/class_505	com/corrodinggames/rts/game/units/custom/b/AttachmentSectionParser
-	f	Lcom/corrodinggames/rts/game/units/custom/b/class_505;	field_2610	parser
+	f	Lcom/corrodinggames/rts/game/units/custom/b/class_505;	field_2610	parse
 c	com/corrodinggames/rts/game/units/custom/b/class_506	com/corrodinggames/rts/game/units/custom/b/Attachment
 	f	Z	field_2614	addTransportedUnits
 	f	Z	field_2615	unloadInCurrentPosition
@@ -902,13 +902,13 @@ c	com/corrodinggames/rts/game/units/custom/class_472	com/corrodinggames/rts/game
 	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;)Lcom/corrodinggames/rts/game/units/custom/class_581;	method_1114	enableAllUnits
 	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;Ljava/lang/String;I)V	method_1115	ExecuteCopyFromForUnitConfig
 	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/class_475;	method_1119	getLogicMessage
-	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V	method_1120	parser
+	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V	method_1120	parse
 	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;	method_1121	resolveUnitConfigPath
 	m	(Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/class_1297;	method_1129	parseStringAsUnitConfig
 	m	(Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/i/class_992;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/class_581;	method_1131	loadUnits
 	m	(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;	method_1136	joinPath
 	m	(Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/class_581;)Lcom/corrodinggames/rts/gameFramework/a/class_765;	method_1137	loadSoundAsset
-	m	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;	method_1138	parserAutoTriggerOnEventParameters
+	m	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;	method_1138	parseAutoTriggerOnEventParameters
 	m	(Ljava/lang/String;Ljava/lang/String;ZLcom/corrodinggames/rts/game/units/custom/class_581;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/m/class_1189;	method_1140	loadTexture
 	m	()V	method_1144	validateUnitsConfig
 	m	(Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/m/class_1189;	method_1146	getCachedTexture
@@ -998,8 +998,8 @@ c	com/corrodinggames/rts/game/units/custom/class_543	com/corrodinggames/rts/game
 	f	F	field_2799	offsetRandomDir
 	f	I	field_2800	recursionLimit
 c	com/corrodinggames/rts/game/units/custom/class_544	com/corrodinggames/rts/game/units/custom/LoadedFile
-	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/class_544;	method_1248	parserFilePath
-	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/class_544;)Lcom/corrodinggames/rts/game/units/custom/class_544;	method_1249	parserFilePath
+	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/class_544;	method_1248	parseFilePath
+	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/class_544;)Lcom/corrodinggames/rts/game/units/custom/class_544;	method_1249	parseFilePath
 c	com/corrodinggames/rts/game/units/custom/class_546	com/corrodinggames/rts/game/units/custom/Turret
 	f	Z	field_2806	slave
 	f	Z	field_2807	canShoot
