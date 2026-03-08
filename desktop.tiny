@@ -7,7 +7,22 @@ c	android/graphics/Paint	android/graphics/Paint
 	m	(F)V	b	setTextSize
 	m	(I)V	b	setColor
 	m	()F	k	getTextSize
+c	android/graphics/Paint$Align	android/graphics/Paint$Align
+	f	Landroid/graphics/Paint$Align;	a	LEFT
+	f	Landroid/graphics/Paint$Align;	b	CENTER
+	f	Landroid/graphics/Paint$Align;	c	RIGHT
+c	android/graphics/Paint$Cap	android/graphics/Paint$Cap
+	f	Landroid/graphics/Paint$Cap;	a	BUTT
+	f	Landroid/graphics/Paint$Cap;	b	ROUND
+	f	Landroid/graphics/Paint$Cap;	c	SQUARE
+c	android/graphics/Paint$Join	android/graphics/Paint$Join
+	f	Landroid/graphics/Paint$Join;	a	MITER
+	f	Landroid/graphics/Paint$Join;	b	ROUND
+	f	Landroid/graphics/Paint$Join;	c	BEVEL
 c	android/graphics/Paint$Style	android/graphics/Paint$Style
+	f	Landroid/graphics/Paint$Style;	a	FILL
+	f	Landroid/graphics/Paint$Style;	b	STROKE
+	f	Landroid/graphics/Paint$Style;	c	FILL_AND_STROKE
 c	android/graphics/PointF	android/graphics/PointF
 	f	F	a	x
 	f	F	b	y
@@ -1105,9 +1120,9 @@ c	com/corrodinggames/rts/game/n	com/corrodinggames/rts/game/class_324
 	f	J	Y	field_1426
 	f	Ljava/lang/Integer;	z	field_1398
 	f	I	Z	field_1427
-	m	(I)Ljava/lang/String;	a	method_467
 	m	(D)Z	a	method_465
 	m	(F)V	a	method_466
+	m	(I)Ljava/lang/String;	a	method_467
 	m	(IZ)I	a	method_468
 	m	(Lcom/corrodinggames/rts/game/q;Lcom/corrodinggames/rts/game/n;)Z	a	method_470
 	m	(Lcom/corrodinggames/rts/game/units/custom/e/a;)I	a	method_473
