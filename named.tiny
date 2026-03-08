@@ -1109,7 +1109,7 @@ c	com/corrodinggames/rts/game/units/custom/class_569	com/corrodinggames/rts/game
 	f	F	field_3050	blendOut
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_3051	playbackRate
 	f	F	field_3058	onActionsQueuedUnitPlayAt
-c	com/corrodinggames/rts/game/units/custom/class_576	com/corrodinggames/rts/game/units/custom/includesTagList
+c	com/corrodinggames/rts/game/units/custom/class_576	com/corrodinggames/rts/game/units/custom/TagListHelper
 	m	(Lcom/corrodinggames/rts/game/units/custom/class_576;Lcom/corrodinggames/rts/game/units/custom/class_577;)Z	method_1398	hasTag
 	m	(Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/class_577;	method_1402	loadTagList
 	m	(Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/class_577;)Lcom/corrodinggames/rts/game/units/custom/class_577;	method_1403	getStringAsTagListOrDefault
