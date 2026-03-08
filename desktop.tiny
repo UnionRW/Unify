@@ -1,5 +1,33 @@
 tiny	2	0	official	intermediary
 c	android/graphics/Paint	android/graphics/Paint
+	f	I	a	mNativePaint
+	f	Landroid/graphics/ColorFilter;	r	colorFilter
+	f	Landroid/graphics/MaskFilter;	s	maskFilter
+	f	Landroid/graphics/PathEffect;	t	pathEffect
+	f	Landroid/graphics/Rasterizer;	u	rasterizer
+	f	Landroid/graphics/Shader;	v	shader
+	f	Landroid/graphics/Typeface;	w	typeface
+	f	Landroid/graphics/Xfermode;	x	xfermode
+	f	Z	y	hasShadowLayer
+	f	F	z	shadowScaleX
+	f	F	A	shadowScaleY
+	f	Ljava/util/Locale;	B	locale
+	f	Z	b	linearText
+	f	F	c	shadowLayerRadius
+	f	F	d	shadowLayerDx
+	f	F	e	shadowLayerDy
+	f	I	f	shadowLayerColor
+	f	I	g	bidiFlags
+	f	[Landroid/graphics/Paint$Style;	h	STYLE_ARRAY
+	f	[Landroid/graphics/Paint$Cap;	i	CAP_ARRAY
+	f	[Landroid/graphics/Paint$Join;	j	JOIN_ARRAY
+	f	[Landroid/graphics/Paint$Align;	k	ALIGN_ARRAY
+	f	I	l	flags
+	f	Landroid/graphics/Paint$Style;	m	style
+	f	I	n	color
+	f	F	o	strokeWidth
+	f	Landroid/graphics/Paint$Align;	p	textAlign
+	f	F	q	textSize
 	m	(F)V	a	setStrokeWidth
 	m	(IIII)V	a	setARGB
 	m	(Landroid/graphics/Paint$Style;)V	a	setStyle
@@ -7,6 +35,53 @@ c	android/graphics/Paint	android/graphics/Paint
 	m	(F)V	b	setTextSize
 	m	(I)V	b	setColor
 	m	()F	k	getTextSize
+	m	()V	a	reset
+	m	(Landroid/graphics/Paint;)V	a	set
+	m	(Landroid/graphics/Paint;)V	b	copyFieldsFrom
+	m	()I	b	getFlags
+	m	(I)V	a	setFlags
+	m	()Z	c	isAntiAlias
+	m	(Z)V	a	setAntiAlias
+	m	(Z)V	b	setDither
+	m	(Z)V	c	setLinearText
+	m	(Z)V	d	setSubpixelText
+	m	()Landroid/graphics/Paint$Style;	d	getStyle
+	m	()I	e	getColor
+	m	()I	f	getAlpha
+	m	(I)V	c	setAlpha
+	m	()F	g	getStrokeWidth
+	m	(Landroid/graphics/Paint$Cap;)V	a	setStrokeCap
+	m	()Landroid/graphics/ColorFilter;	h	getColorFilter
+	m	(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;	a	setColorFilter
+	m	(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;	a	setXfermode
+	m	()Landroid/graphics/Typeface;	i	getTypeface
+	m	()Landroid/graphics/Paint$Align;	j	getTextAlign
+	m	(Landroid/graphics/Paint$Align;)V	a	setTextAlign
+	m	(Ljava/util/Locale;)V	a	setTextLocale
+	m	()F	l	ascent
+	m	()F	m	descent
+	m	(Landroid/graphics/Paint$FontMetrics;)F	a	getFontMetrics
+	m	()Landroid/graphics/Paint$FontMetrics;	n	getFontMetrics
+	m	(Ljava/lang/String;)F	a	measureText
+	m	(Ljava/lang/String;I)F	a	measureTextInternal
+	m	([CIIFF[F)I	a	breakText
+	m	([CIIFI[F)I	a	breakTextInternal
+	m	(Ljava/lang/String;ZFI[F)I	a	breakTextStr
+	m	(Ljava/lang/CharSequence;IIZF[F)I	a	breakText
+	m	(Ljava/lang/CharSequence;II[CI)V	a	getChars
+	m	(Ljava/lang/String;ZF[F)I	a	breakTextString
+	m	([CII[F)I	a	getTextWidths
+	m	(Ljava/lang/String;IILandroid/graphics/Rect;)V	a	getTextBounds
+	m	()I	o	nativeInit
+	m	(I)I	d	nativeInitWithPaint
+	m	(I)V	e	nativeReset
+	m	(II)V	a	nativeCopy
+	m	(II)V	b	nativeSetStrokeCap
+	m	(II)I	c	nativeSetColorFilter
+	m	(II)I	d	nativeSetXfermode
+	m	(ILjava/lang/String;)V	a	nativeSetTextLocale
+	m	(I[CIII[F)I	a	nativeGetTextWidths
+	m	(I)V	f	nativeFinalizer
 c	android/graphics/Paint$Align	android/graphics/Paint$Align
 	f	Landroid/graphics/Paint$Align;	a	LEFT
 	f	Landroid/graphics/Paint$Align;	b	CENTER
