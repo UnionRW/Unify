@@ -290,6 +290,13 @@ c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/Player
 	m	()F	method_542	aIHandicaps
 c	com/corrodinggames/rts/game/class_325	com/corrodinggames/rts/game/TeamColorsHueType
 c	com/corrodinggames/rts/game/class_327	com/corrodinggames/rts/game/Relation
+	f	Lcom/corrodinggames/rts/game/class_327;	field_1483	own
+	f	Lcom/corrodinggames/rts/game/class_327;	field_1484	ally
+	f	Lcom/corrodinggames/rts/game/class_327;	field_1485	allyNotOwn
+	f	Lcom/corrodinggames/rts/game/class_327;	field_1486	enemy
+	f	Lcom/corrodinggames/rts/game/class_327;	field_1487	neutral
+	f	Lcom/corrodinggames/rts/game/class_327;	field_1488	any
+	f	Lcom/corrodinggames/rts/game/class_327;	field_1489	notOwn
 c	com/corrodinggames/rts/game/units/a/class_332	com/corrodinggames/rts/game/units/actions/EmptyActionFilter
 c	com/corrodinggames/rts/game/units/a/class_333	com/corrodinggames/rts/game/units/actions/ActionId
 	f	Lcom/corrodinggames/rts/game/units/a/class_333;	field_1519	allActions
@@ -678,6 +685,7 @@ c	com/corrodinggames/rts/game/units/custom/a/a/class_457	com/corrodinggames/rts/
 c	com/corrodinggames/rts/game/units/custom/a/a/class_459	com/corrodinggames/rts/game/units/custom/actionSection/actionPartA/TransportActionPart
 	f	I	field_2250	forceUnloadTransportNowOnlyOnSlot
 c	com/corrodinggames/rts/game/units/custom/a/class_444	com/corrodinggames/rts/game/units/custom/actionSection/Action
+	m	(Lcom/corrodinggames/rts/game/units/custom/class_579;Lcom/corrodinggames/rts/game/units/a/class_349;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/class_426;I)Z	method_1093	onAction
 c	com/corrodinggames/rts/game/units/custom/a/class_461	com/corrodinggames/rts/game/units/custom/a/class_461
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2255	isVisible
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2256	isLocked
@@ -794,6 +802,7 @@ c	com/corrodinggames/rts/game/units/custom/b/class_496	com/corrodinggames/rts/ga
 	f	F	field_2504	shadowOffsetY
 	f	Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;	field_2505	isVisible
 	f	Lcom/corrodinggames/rts/game/units/custom/b/class_498;	field_2506	layer
+	f	F	field_2507	order
 	f	Z	field_2508	needCutting
 	f	I	field_2509	totalFrames
 	f	I	field_2510	frameWidth
