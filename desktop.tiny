@@ -1,4 +1,12 @@
 tiny	2	0	official	intermediary
+c	android/graphics/Color	android/graphics/Color
+	m	(I)I	a	alpha
+	m	(III)I	a	rgb
+	m	(IIII)I	a	argb
+	m	(Ljava/lang/String;)I	a	parseColor
+	m	(I)I	b	red
+	m	(I)I	c	green
+	m	(I)I	d	blue
 c	android/graphics/Paint	android/graphics/Paint
 	f	I	a	mNativePaint
 	f	Landroid/graphics/ColorFilter;	r	colorFilter
@@ -82,6 +90,30 @@ c	android/graphics/Paint	android/graphics/Paint
 	m	(ILjava/lang/String;)V	a	nativeSetTextLocale
 	m	(I[CIII[F)I	a	nativeGetTextWidths
 	m	(I)V	f	nativeFinalizer
+c	android/graphics/Rect	android/graphics/Rect
+	f	I	a	left
+	f	I	b	top
+	f	I	c	right
+	f	I	d	bottom
+	m	()V	<init>	<init>
+	m	(IIII)V	<init>	<init>
+	m	(Landroid/graphics/Rect;)V	<init>	<init>
+	m	(Ljava/lang/Object;)Z	equals	equals
+	m	()Ljava/lang/String;	toString	toString
+	m	()Z	a	isEmpty
+	m	()I	b	width
+	m	()I	c	height
+	m	()I	d	centerX
+	m	()I	e	centerY
+	m	()F	f	exactCenterX
+	m	()F	g	exactCenterY
+	m	()V	h	setEmpty
+	m	(IIII)V	a	set
+	m	(Landroid/graphics/Rect;)V	a	set
+	m	(II)V	a	offset
+	m	(II)Z	b	contains
+	m	(Landroid/graphics/Rect;)Z	b	contains
+	m	(IIII)Z	b	intersects
 c	android/graphics/Paint$Align	android/graphics/Paint$Align
 	f	Landroid/graphics/Paint$Align;	a	LEFT
 	f	Landroid/graphics/Paint$Align;	b	CENTER
