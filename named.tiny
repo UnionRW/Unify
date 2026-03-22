@@ -2352,9 +2352,9 @@ c	com/corrodinggames/rts/gameFramework/utility/class_1331	com/corrodinggames/rts
 	f	[Lcom/corrodinggames/rts/game/units/class_426;	field_7339	unitRefList
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_3683	addUnitRef
 c	com/corrodinggames/rts/game/class_313	com/corrodinggames/rts/game/PlayerBase
-c	com/corrodinggames/rts/gameFramework/j/class_997	com/corrodinggames/rts/gameFramework/net/ListOperate_RemoveRoom
-c	com/corrodinggames/rts/gameFramework/j/class_999	com/corrodinggames/rts/gameFramework/net/ListOperate_Join_GetRoomIP
-c	com/corrodinggames/rts/gameFramework/j/class_1024	com/corrodinggames/rts/gameFramework/net/Server_type
+c	com/corrodinggames/rts/gameFramework/j/class_997	com/corrodinggames/rts/gameFramework/net/ListOperateRemoveRoom
+c	com/corrodinggames/rts/gameFramework/j/class_999	com/corrodinggames/rts/gameFramework/net/ListOperateJoinGetRoomIP
+c	com/corrodinggames/rts/gameFramework/j/class_1024	com/corrodinggames/rts/gameFramework/net/ServerType
 c	com/corrodinggames/rts/gameFramework/j/class_1026	com/corrodinggames/rts/gameFramework/net/ServerAcceptRunnable
 	f	Ljava/net/ServerSocket;	field_6079	serverSocket
 	f	I	field_6080	port
@@ -2365,14 +2365,14 @@ c	com/corrodinggames/rts/gameFramework/j/class_1029	com/corrodinggames/rts/gameF
 c	com/corrodinggames/rts/gameFramework/j/class_1031	com/corrodinggames/rts/gameFramework/net/GzipDataOutStream
 c	com/corrodinggames/rts/gameFramework/j/class_1033	com/corrodinggames/rts/gameFramework/net/PingTask
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1001;	field_6130	gameNetEngine
-c	com/corrodinggames/rts/gameFramework/j/class_1036	com/corrodinggames/rts/gameFramework/net/Unk_Packet
+c	com/corrodinggames/rts/gameFramework/j/class_1036	com/corrodinggames/rts/gameFramework/net/UnkPacket
 c	com/corrodinggames/rts/gameFramework/j/class_1038	com/corrodinggames/rts/gameFramework/net/ReciveSocketInStream
 c	com/corrodinggames/rts/gameFramework/j/class_1039	com/corrodinggames/rts/gameFramework/net/SendSocketOutStream
 c	com/corrodinggames/rts/gameFramework/j/class_1040	com/corrodinggames/rts/gameFramework/net/ListRoomInfo
 c	com/corrodinggames/rts/gameFramework/j/class_1041	com/corrodinggames/rts/gameFramework/net/RelayForwardedSocket
 c	com/corrodinggames/rts/gameFramework/j/class_1042	com/corrodinggames/rts/gameFramework/net/RFSInStream
 c	com/corrodinggames/rts/gameFramework/j/class_1043	com/corrodinggames/rts/gameFramework/net/RFSOutStream
-c	com/corrodinggames/rts/gameFramework/j/class_1051	com/corrodinggames/rts/gameFramework/net/ListOperate_Join_GetRoomList
+c	com/corrodinggames/rts/gameFramework/j/class_1051	com/corrodinggames/rts/gameFramework/net/ListOperateJoinGetRoomList
 c	com/corrodinggames/rts/gameFramework/j/class_1053	com/corrodinggames/rts/gameFramework/net/HTTPService
 c	com/corrodinggames/rts/gameFramework/j/class_1057	com/corrodinggames/rts/gameFramework/net/SendErrorLogToGameDev
-c	com/corrodinggames/rts/gameFramework/j/class_1060	com/corrodinggames/rts/gameFramework/net/ListOperate_AddRoom
+c	com/corrodinggames/rts/gameFramework/j/class_1060	com/corrodinggames/rts/gameFramework/net/ListOperateAddRoom
