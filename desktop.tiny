@@ -10336,21 +10336,25 @@ c	com/corrodinggames/rts/gameFramework/i/b	com/corrodinggames/rts/gameFramework/
 	f	I	E	field_5787
 	f	Z	f	field_5810
 	f	I	F	field_5788
+	f	J	G	field_5889
 	f	J	H	field_5790
 	f	Z	i	field_5811
 	f	I	I	field_5791
 	f	Z	j	field_5812
+	f	I	J	field_5892
 	f	J	k	field_5813
 	f	I	K	field_5793
 	f	Z	l	field_5814
 	f	I	L	field_5794
 	f	Z	m	field_5815
 	f	Ljava/lang/String;	M	field_5795
+	f	Ljava/lang/String;	n	field_5816
 	f	Z	N	field_5796
 	f	Ljava/lang/String;	o	field_5817
 	f	Z	O	field_5797
 	f	Ljava/lang/String;	p	field_5818
 	f	I	P	field_5798
+	f	Ljava/lang/String;	q	field_5819
 	f	Ljava/util/ArrayList;	Q	field_5799
 	f	Z	r	field_5820
 	f	Ljava/lang/String;	R	field_5800
@@ -10363,6 +10367,7 @@ c	com/corrodinggames/rts/gameFramework/i/b	com/corrodinggames/rts/gameFramework/
 	f	Ljava/lang/String;	v	field_5824
 	f	Ljava/util/ArrayList;	V	field_5804
 	f	I	w	field_5825
+	f	I	x	field_5826
 	f	Z	y	field_5827
 	f	Z	z	field_5828
 	m	()Ljava/lang/String;	a	method_2679
