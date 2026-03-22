@@ -9,6 +9,8 @@ c	a/a/a/g	net/rudp/a/SYNSegment
 c	a/a/a/h	net/rudp/a/Segment
 c	a/a/b	net/rudp/ReliableServerSocket
 c	a/a/h	net/rudp/ReliableSocket
+c	a/a/a/i	net/rudp/a/Timer
+c	a/a/o	net/rudp/ReliableSocketInputStream2
 c	a/a/p	net/rudp/ReliableSocketInputStream
 c	a/a/q	net/rudp/ReliableSocketOutputStream
 c	a/a/r	net/rudp/ReliableSocketProfile
@@ -2349,8 +2351,6 @@ c	com/corrodinggames/rts/gameFramework/utility/class_1331	com/corrodinggames/rts
 	f	I	field_7338	unitCount
 	f	[Lcom/corrodinggames/rts/game/units/class_426;	field_7339	unitRefList
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_3683	addUnitRef
-c	a/a/a/i	net/rudp/a/Timer
-c	a/a/o	net/rudp/ReliableSocketInputStream
 c	com/corrodinggames/rts/game/class_313	com/corrodinggames/rts/game/PlayerBase
 c	com/corrodinggames/rts/gameFramework/j/class_997	com/corrodinggames/rts/gameFramework/net/ListOperate_RemoveRoom
 c	com/corrodinggames/rts/gameFramework/j/class_999	com/corrodinggames/rts/gameFramework/net/ListOperate_Join_GetRoomIP
