@@ -8127,8 +8127,11 @@ c	com/corrodinggames/rts/gameFramework/a/e	com/corrodinggames/rts/gameFramework/
 	m	(Lcom/corrodinggames/rts/gameFramework/a/i;F)Z	a	method_1748
 	m	(Lcom/corrodinggames/rts/gameFramework/a/i;FFF)V	a	method_1750
 	m	(Lcom/corrodinggames/rts/gameFramework/a/i;FFFF)V	a	method_1751
+	m	(Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/a/i;	a	method_1752
+	m	(Ljava/lang/String;Lcom/corrodinggames/rts/gameFramework/utility/j;Z)Lcom/corrodinggames/rts/gameFramework/a/i;	a	method_1753
 	m	()V	b	method_1745
 	m	(Lcom/corrodinggames/rts/gameFramework/a/i;F)V	b	method_1749
+	m	(Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/a/i;	b	method_1756
 	m	(Lcom/corrodinggames/rts/gameFramework/a/i;F)V	c	method_1755
 c	com/corrodinggames/rts/gameFramework/a/f	com/corrodinggames/rts/gameFramework/a/class_762
 	m	(I)Lcom/corrodinggames/rts/gameFramework/a/i;	a	method_1758
