@@ -138,6 +138,9 @@ c	android/graphics/Rect	android/graphics/Rect
 	m	()F	g	exactCenterY
 	m	()V	h	setEmpty
 	m	()Ljava/lang/String;	toString	toString
+c	android/view/KeyEvent	android/view/KeyEvent
+	m	()I	a	getMaxKeyCode
+c	com/corrodinggames/rts/appFramework/f	com/corrodinggames/rts/appFramework/class_5
 c	com/corrodinggames/rts/appFramework/n	com/corrodinggames/rts/appFramework/MultiplayerBattleroomActivity
 	f	Lcom/corrodinggames/rts/appFramework/n;	c	lastLoaded
 	m	(Lcom/corrodinggames/rts/gameFramework/j/ae;)V	a	askPasswordInternal
@@ -8840,6 +8843,7 @@ c	com/corrodinggames/rts/gameFramework/bf	com/corrodinggames/rts/gameFramework/c
 	f	J	g	field_4782
 	f	I	h	field_4783
 	f	Lcom/corrodinggames/rts/gameFramework/be;	i	field_4784
+c	com/corrodinggames/rts/gameFramework/bg	com/corrodinggames/rts/gameFramework/bg
 c	com/corrodinggames/rts/gameFramework/bh	com/corrodinggames/rts/gameFramework/class_869
 	f	I	a	field_4791
 	f	I	b	field_4792
@@ -10014,6 +10018,7 @@ c	com/corrodinggames/rts/gameFramework/f/g	com/corrodinggames/rts/gameFramework/
 	m	(Lcom/corrodinggames/rts/gameFramework/e;Lcom/corrodinggames/rts/game/units/a/s;Z)V	a	method_2524
 	m	(Lcom/corrodinggames/rts/gameFramework/f/a/f;)V	a	method_2525
 	m	(Lcom/corrodinggames/rts/gameFramework/j/as;)V	a	method_2069
+	m	(Lcom/corrodinggames/rts/gameFramework/l;)Z	a	method_2526
 	m	(Lcom/corrodinggames/rts/gameFramework/l;Lcom/corrodinggames/rts/game/n;ZLcom/corrodinggames/rts/game/units/custom/e/a;DLcom/corrodinggames/rts/game/units/custom/e/f;ILcom/corrodinggames/rts/game/units/custom/e/a;)Z	a	method_2528
 	m	(Lcom/corrodinggames/rts/gameFramework/l;Lcom/corrodinggames/rts/game/n;ZLcom/corrodinggames/rts/game/units/custom/e/f;)V	a	method_2529
 	m	(Lcom/corrodinggames/rts/gameFramework/l;Lcom/corrodinggames/rts/game/n;ZZ)V	a	method_2527
@@ -10026,6 +10031,7 @@ c	com/corrodinggames/rts/gameFramework/f/g	com/corrodinggames/rts/gameFramework/
 	m	(FFLandroid/graphics/Point;)V	b	method_2497
 	m	(Lcom/corrodinggames/rts/game/units/a/s;FF)V	b	method_2540
 	m	(Lcom/corrodinggames/rts/game/units/am;)V	b	method_2563
+	m	(Lcom/corrodinggames/rts/gameFramework/l;)Z	b	method_2543
 	m	(Ljava/lang/String;)V	b	method_2530
 	m	()F	c	method_2580
 	m	(F)V	c	method_2546
@@ -11486,6 +11492,7 @@ c	com/corrodinggames/rts/gameFramework/l	com/corrodinggames/rts/gameFramework/cl
 	f	Lcom/corrodinggames/rts/gameFramework/bg;	bY	field_6353
 	f	I	bz	field_6380
 	f	Lcom/corrodinggames/rts/gameFramework/i/a;	bZ	field_6354
+	f	[Z	c	field_6447
 	f	Lcom/corrodinggames/rts/gameFramework/y;	ca	field_6355
 	f	F	cA	field_6433
 	f	Lcom/corrodinggames/rts/gameFramework/ba;	cb	field_6356
@@ -11538,6 +11545,7 @@ c	com/corrodinggames/rts/gameFramework/l	com/corrodinggames/rts/gameFramework/cl
 	f	F	cY	field_6405
 	f	F	cz	field_6432
 	f	Z	cZ	field_6406
+	f	[Z	d	field_6448
 	f	F	da	field_6407
 	f	F	dA	field_6485
 	f	F	db	field_6408
