@@ -7,9 +7,9 @@ c	a/a/a/e	net/rudp/a/NULSegment
 c	a/a/a/f	net/rudp/a/RSTSegment
 c	a/a/a/g	net/rudp/a/SYNSegment
 c	a/a/a/h	net/rudp/a/Segment
+c	a/a/a/i	net/rudp/a/Timer
 c	a/a/b	net/rudp/ReliableServerSocket
 c	a/a/h	net/rudp/ReliableSocket
-c	a/a/a/i	net/rudp/a/Timer
 c	a/a/o	net/rudp/ReliableSocketInputStream2
 c	a/a/p	net/rudp/ReliableSocketInputStream
 c	a/a/q	net/rudp/ReliableSocketOutputStream
@@ -83,6 +83,7 @@ c	com/corrodinggames/rts/game/b/class_310	com/corrodinggames/rts/game/maps/Bitma
 	f	Lcom/corrodinggames/rts/gameFramework/m/class_1189;	field_1070	texture
 	f	Ljava/lang/String;	field_1071	base64
 c	com/corrodinggames/rts/game/class_312	com/corrodinggames/rts/game/DefaultUnitInfo
+c	com/corrodinggames/rts/game/class_313	com/corrodinggames/rts/game/PlayerBase
 c	com/corrodinggames/rts/game/class_314	com/corrodinggames/rts/game/Projectile
 	f	Z	field_1073	instant
 	f	Z	field_1074	laserEffect
@@ -267,6 +268,7 @@ c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/Player
 	f	Z	field_1407	teamWipedOut
 	f	Z	field_1409	sharedControl_1
 	f	Z	field_1410	sharedControl_2
+	f	Ljava/lang/String;	field_1415	connectHexID
 	f	I	field_1423	ping
 	f	J	field_1425	lastReciveTime
 	f	Lcom/corrodinggames/rts/game/units/custom/class_577;	field_1438	teamTagList
@@ -289,9 +291,8 @@ c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/Player
 	m	(I)Z	method_517	hasEnoughCreditsWithAntiLag
 	m	(I)Lcom/corrodinggames/rts/game/class_324;	method_526	getPlayer
 	m	()I	method_539	getPing
-	m	()F	method_542	aIHandicaps
-	f	Ljava/lang/String;	field_1415	connectHexID
 	m	()Z	method_540	isTimeOut
+	m	()F	method_542	aIHandicaps
 	m	()I	method_544	getNullSite
 	m	()I	method_545	m369H
 c	com/corrodinggames/rts/game/class_325	com/corrodinggames/rts/game/TeamColorsHueType
@@ -494,6 +495,15 @@ c	com/corrodinggames/rts/game/units/class_426	com/corrodinggames/rts/game/units/
 	m	()Z	method_1061	isUnselectable
 	m	()F	method_1067	getNanoBuildSpeed
 c	com/corrodinggames/rts/game/units/class_428	com/corrodinggames/rts/game/units/MovementType
+	f	Lcom/corrodinggames/rts/game/units/class_428;	field_2028	NONE
+	f	Lcom/corrodinggames/rts/game/units/class_428;	field_2029	LAND
+	f	Lcom/corrodinggames/rts/game/units/class_428;	field_2030	BUILDING
+	f	Lcom/corrodinggames/rts/game/units/class_428;	field_2031	AIR
+	f	Lcom/corrodinggames/rts/game/units/class_428;	field_2032	WATER
+	f	Lcom/corrodinggames/rts/game/units/class_428;	field_2033	HOVER
+	f	Lcom/corrodinggames/rts/game/units/class_428;	field_2034	OVER_CLIFF
+	f	Lcom/corrodinggames/rts/game/units/class_428;	field_2035	OVER_CLIFF_WATER
+	m	(Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/class_428;	method_1069	parse
 c	com/corrodinggames/rts/game/units/class_431	com/corrodinggames/rts/game/units/UnitEnum
 	f	Lcom/corrodinggames/rts/game/units/class_431;	field_2060	tree
 	f	Lcom/corrodinggames/rts/game/units/class_431;	field_2061	repairbay
@@ -2050,26 +2060,13 @@ c	com/corrodinggames/rts/gameFramework/i/class_992	com/corrodinggames/rts/gameFr
 	m	()V	method_2691	loadModInfo
 	m	()Ljava/lang/String;	method_2692	getRamUsed
 	m	()Lcom/corrodinggames/rts/gameFramework/utility/class_1297;	method_2694	getModInfoReader
+c	com/corrodinggames/rts/gameFramework/j/class_997	com/corrodinggames/rts/gameFramework/net/ListOperateRemoveRoom
 c	com/corrodinggames/rts/gameFramework/j/class_998	com/corrodinggames/rts/gameFramework/net/ListOperateUpdateRoom
+c	com/corrodinggames/rts/gameFramework/j/class_999	com/corrodinggames/rts/gameFramework/net/ListOperateJoinGetRoomIP
 c	com/corrodinggames/rts/gameFramework/j/class_1001	com/corrodinggames/rts/gameFramework/net/NetworkEngine
+	f	Z	field_5851	isServer
 	f	I	field_5873	loaclTick
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1015;	field_5874	roomSettings
-	f	Ljava/lang/Object;	field_5892	indexSync
-	f	I	field_5918	desyncErrorCount
-	f	Lcom/corrodinggames/rts/gameFramework/j/class_1011;	field_5933	enterPasswordCallback
-	m	(Ljava/lang/String;Z)V	method_2752	handleDesyncError
-	m	(Lcom/corrodinggames/rts/game/class_324;)Lcom/corrodinggames/rts/gameFramework/j/class_1037;	method_2775	getConnection
-	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1032;)V	method_2777	sendPacketToClients
-	m	(Z)V	method_2782	pause
-	m	(Lcom/corrodinggames/rts/game/class_324;)V	method_2785	kickTeamAndAttachedPlayer
-	m	(Ljava/lang/String;)V	method_2796	logDesyncWarning
-	m	(Ljava/lang/String;)V	method_2803	logDesyncError
-	m	()J	method_2807	getNextUnitId
-	m	(Ljava/lang/String;)V	method_2809	sendSystemMessage
-	m	(Ljava/lang/String;)V	method_2812	quickCommand
-	m	(Ljava/lang/String;)V	method_2816	sendChatMessage
-	m	()Z	method_2819	shouldGameBePaused
-	f	Z	field_5851	isServer
 	f	Ljava/lang/Thread;	field_5879	tcpThread
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1026;	field_5880	tcpAccept
 	f	Ljava/lang/Thread;	field_5881	udpThread
@@ -2078,7 +2075,10 @@ c	com/corrodinggames/rts/gameFramework/j/class_1001	com/corrodinggames/rts/gameF
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1033;	field_5884	pingTask
 	f	Ljava/util/concurrent/ConcurrentLinkedQueue;	field_5888	socketList
 	f	I	field_5891	connectIndex
+	f	Ljava/lang/Object;	field_5892	indexSync
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1021;	field_5915	checkSumData
+	f	I	field_5918	desyncErrorCount
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1011;	field_5933	enterPasswordCallback
 	f	F	field_5952	playerTick
 	f	I	field_5955	lastSyncTick
 	f	Z	field_5967	debug
@@ -2090,14 +2090,26 @@ c	com/corrodinggames/rts/gameFramework/j/class_1001	com/corrodinggames/rts/gameF
 	m	(Lcom/corrodinggames/rts/game/class_324;I)V	method_2733	setPlayerTeamSynchronized
 	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1032;)V	method_2737	resolveCommandPacket
 	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1037;Z)Z	method_2746	sendStartGamePacket
+	m	(Ljava/lang/String;Z)V	method_2752	handleDesyncError
 	m	(ZZZ)V	method_2756	resync
 	m	([BLcom/corrodinggames/rts/gameFramework/j/class_1037;)V	method_2757	updateDeSync
 	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1037;)V	method_2765	sendTeamData
 	m	(Ljava/lang/String;)V	method_2769	closeServer
 	m	(Ljava/lang/String;Z)Ljava/net/Socket;	method_2771	getSocketAndResolveIp
+	m	(Lcom/corrodinggames/rts/game/class_324;)Lcom/corrodinggames/rts/gameFramework/j/class_1037;	method_2775	getConnection
 	m	(Lcom/corrodinggames/rts/game/class_324;I)V	method_2776	setPlayerTeam
+	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1032;)V	method_2777	sendPacketToClients
+	m	(Z)V	method_2782	pause
+	m	(Lcom/corrodinggames/rts/game/class_324;)V	method_2785	kickTeamAndAttachedPlayer
 	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1032;)V	method_2786	resolveSystemCommandPacket
 	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1037;)V	method_2787	sendServerInfo
+	m	(Ljava/lang/String;)V	method_2796	logDesyncWarning
+	m	(Ljava/lang/String;)V	method_2803	logDesyncError
+	m	()J	method_2807	getNextUnitId
+	m	(Ljava/lang/String;)V	method_2809	sendSystemMessage
+	m	(Ljava/lang/String;)V	method_2812	quickCommand
+	m	(Ljava/lang/String;)V	method_2816	sendChatMessage
+	m	()Z	method_2819	shouldGameBePaused
 c	com/corrodinggames/rts/gameFramework/j/class_1011	com/corrodinggames/rts/gameFramework/net/EnterPasswordCallback
 c	com/corrodinggames/rts/gameFramework/j/class_1015	com/corrodinggames/rts/gameFramework/net/RoomSettings
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1016;	field_6012	mapType
@@ -2116,34 +2128,47 @@ c	com/corrodinggames/rts/gameFramework/j/class_1016	com/corrodinggames/rts/gameF
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1016;	field_6031	savedGame
 c	com/corrodinggames/rts/gameFramework/j/class_1021	com/corrodinggames/rts/gameFramework/net/CheckSumData
 	f	J	field_6036	allSum
+c	com/corrodinggames/rts/gameFramework/j/class_1024	com/corrodinggames/rts/gameFramework/net/ServerType
+c	com/corrodinggames/rts/gameFramework/j/class_1026	com/corrodinggames/rts/gameFramework/net/ServerAcceptRunnable
+	f	Ljava/net/ServerSocket;	field_6079	serverSocket
+	f	I	field_6080	port
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1001;	field_6093	netEngine
+	m	(Z)V	method_2846	startServerSocket
+c	com/corrodinggames/rts/gameFramework/j/class_1028	com/corrodinggames/rts/gameFramework/net/ServerAcceptData
+c	com/corrodinggames/rts/gameFramework/j/class_1029	com/corrodinggames/rts/gameFramework/net/APIEncryption
 c	com/corrodinggames/rts/gameFramework/j/class_1030	com/corrodinggames/rts/gameFramework/net/GameOutputStream
+	f	Ljava/io/ByteArrayOutputStream;	field_6112	byteStream
+	f	Ljava/io/DataOutputStream;	field_6113	useStream
 	f	Ljava/io/DataOutputStream;	field_6114	packet
+	m	()V	method_2853	flashAll
 	m	(D)V	method_2854	writeDouble
 	m	(F)V	method_2855	writeFloat
+	m	(I)Lcom/corrodinggames/rts/gameFramework/j/class_1032;	method_2856	getPacket
 	m	(J)V	method_2858	writeLong
+	m	(Landroid/graphics/PointF;)V	method_2859	writeIsPointF
+	m	(Ljava/lang/Enum;)V	method_2869	writeEnum
 	m	(Ljava/lang/Integer;)V	method_2870	writeIsInt
 	m	(Ljava/lang/String;)V	method_2871	writeIsString
+	m	(Ljava/lang/String;Z)V	method_2872	startBlock
 	m	(Z)V	method_2874	writeBoolean
 	m	(I)V	method_2877	writeByte
 	m	(Ljava/lang/String;)V	method_2880	writeUTF
-	m	(I)V	method_2883	writeInt
-	f	Ljava/io/ByteArrayOutputStream;	field_6112	byteStream
-	f	Ljava/io/DataOutputStream;	field_6113	useStream
-	m	()V	method_2853	flashAll
-	m	(I)Lcom/corrodinggames/rts/gameFramework/j/class_1032;	method_2856	getPacket
-	m	(Landroid/graphics/PointF;)V	method_2859	writeIsPointF
-	m	(Ljava/lang/Enum;)V	method_2869	writeEnum
-	m	(Ljava/lang/String;Z)V	method_2872	startBlock
 	m	()Ljava/lang/String;	method_2882	toString
+	m	(I)V	method_2883	writeInt
 	m	()[B	method_2885	toByteArray
 	m	(Ljava/lang/String;)V	method_2888	endBlock
+c	com/corrodinggames/rts/gameFramework/j/class_1031	com/corrodinggames/rts/gameFramework/net/GzipDataOutStream
 c	com/corrodinggames/rts/gameFramework/j/class_1032	com/corrodinggames/rts/gameFramework/net/Packet
-	f	[B	field_6125	bytes
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1037;	field_6123	playerConnect
 	f	I	field_6124	type
+	f	[B	field_6125	bytes
 	f	I	field_6126	f753d
+c	com/corrodinggames/rts/gameFramework/j/class_1033	com/corrodinggames/rts/gameFramework/net/PingTask
+	f	Lcom/corrodinggames/rts/gameFramework/j/class_1001;	field_6130	gameNetEngine
+c	com/corrodinggames/rts/gameFramework/j/class_1036	com/corrodinggames/rts/gameFramework/net/UnkPacket
 c	com/corrodinggames/rts/gameFramework/j/class_1037	com/corrodinggames/rts/gameFramework/net/NetworkConnection
 	f	Lcom/corrodinggames/rts/game/class_313;	field_6142	player
+	f	I	field_6147	clientVersion
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1038;	field_6148	receiveWorker
 	f	Lcom/corrodinggames/rts/gameFramework/j/class_1039;	field_6149	sendWorker
 	f	Ljava/lang/Thread;	field_6150	receiveThread
@@ -2172,6 +2197,7 @@ c	com/corrodinggames/rts/gameFramework/j/class_1037	com/corrodinggames/rts/gameF
 	f	Z	field_6186	isDirectClient
 	f	Z	field_6187	isDirectServer
 	f	Z	field_6188	isForwarded
+	f	I	field_6190	desyncCount
 	m	()I	method_2893	logDebug
 	m	(Lcom/corrodinggames/rts/gameFramework/j/class_1032;)V	method_2894	enqueuePacket
 	m	(Ljava/lang/String;)V	method_2895	handleRemoteDisconnect
@@ -2187,18 +2213,26 @@ c	com/corrodinggames/rts/gameFramework/j/class_1037	com/corrodinggames/rts/gameF
 	m	()Z	method_2906	isConnected
 	m	()V	method_2907	performDisconnectCleanup
 	m	()V	method_2908	requestLocalDisconnect
-	f	I	field_6147	clientVersion
-	f	I	field_6190	desyncCount
+c	com/corrodinggames/rts/gameFramework/j/class_1038	com/corrodinggames/rts/gameFramework/net/ReciveSocketInStream
+c	com/corrodinggames/rts/gameFramework/j/class_1039	com/corrodinggames/rts/gameFramework/net/SendSocketOutStream
+c	com/corrodinggames/rts/gameFramework/j/class_1040	com/corrodinggames/rts/gameFramework/net/ListRoomInfo
+c	com/corrodinggames/rts/gameFramework/j/class_1041	com/corrodinggames/rts/gameFramework/net/RelayForwardedSocket
+c	com/corrodinggames/rts/gameFramework/j/class_1042	com/corrodinggames/rts/gameFramework/net/RFSInStream
+c	com/corrodinggames/rts/gameFramework/j/class_1043	com/corrodinggames/rts/gameFramework/net/RFSOutStream
 c	com/corrodinggames/rts/gameFramework/j/class_1044	com/corrodinggames/rts/gameFramework/net/GameInputStream
 	f	Ljava/io/ByteArrayInputStream;	field_6237	byteStream
 	f	Ljava/io/DataInputStream;	field_6242	useStream
-	m	()V	method_2931	setMainStream
 	m	(Ljava/lang/String;)[B	method_2924	getBytesAndCheckMark
 	m	(Ljava/lang/String;)V	method_2926	endBlock
 	m	()[B	method_2929	readBytes
+	m	()V	method_2931	setMainStream
 c	com/corrodinggames/rts/gameFramework/j/class_1047	com/corrodinggames/rts/gameFramework/net/GameNetAPIOperate
 	f	[Ljava/lang/String;	field_6252	urlList
 	m	(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V	method_2942	listAddBasicNameValuePair
+c	com/corrodinggames/rts/gameFramework/j/class_1051	com/corrodinggames/rts/gameFramework/net/ListOperateJoinGetRoomList
+c	com/corrodinggames/rts/gameFramework/j/class_1053	com/corrodinggames/rts/gameFramework/net/HTTPService
+c	com/corrodinggames/rts/gameFramework/j/class_1057	com/corrodinggames/rts/gameFramework/net/SendErrorLogToGameDev
+c	com/corrodinggames/rts/gameFramework/j/class_1060	com/corrodinggames/rts/gameFramework/net/ListOperateAddRoom
 c	com/corrodinggames/rts/gameFramework/k/class_1069	com/corrodinggames/rts/gameFramework/k/PathLayer
 	f	Lcom/corrodinggames/rts/game/units/class_428;	field_6524	movementType
 	f	I	field_6525	gridWidth
@@ -2351,28 +2385,3 @@ c	com/corrodinggames/rts/gameFramework/utility/class_1331	com/corrodinggames/rts
 	f	I	field_7338	unitCount
 	f	[Lcom/corrodinggames/rts/game/units/class_426;	field_7339	unitRefList
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_3683	addUnitRef
-c	com/corrodinggames/rts/game/class_313	com/corrodinggames/rts/game/PlayerBase
-c	com/corrodinggames/rts/gameFramework/j/class_997	com/corrodinggames/rts/gameFramework/net/ListOperateRemoveRoom
-c	com/corrodinggames/rts/gameFramework/j/class_999	com/corrodinggames/rts/gameFramework/net/ListOperateJoinGetRoomIP
-c	com/corrodinggames/rts/gameFramework/j/class_1024	com/corrodinggames/rts/gameFramework/net/ServerType
-c	com/corrodinggames/rts/gameFramework/j/class_1026	com/corrodinggames/rts/gameFramework/net/ServerAcceptRunnable
-	f	Ljava/net/ServerSocket;	field_6079	serverSocket
-	f	I	field_6080	port
-	f	Lcom/corrodinggames/rts/gameFramework/j/class_1001;	field_6093	netEngine
-	m	(Z)V	method_2846	startServerSocket
-c	com/corrodinggames/rts/gameFramework/j/class_1028	com/corrodinggames/rts/gameFramework/net/ServerAcceptData
-c	com/corrodinggames/rts/gameFramework/j/class_1029	com/corrodinggames/rts/gameFramework/net/APIEncryption
-c	com/corrodinggames/rts/gameFramework/j/class_1031	com/corrodinggames/rts/gameFramework/net/GzipDataOutStream
-c	com/corrodinggames/rts/gameFramework/j/class_1033	com/corrodinggames/rts/gameFramework/net/PingTask
-	f	Lcom/corrodinggames/rts/gameFramework/j/class_1001;	field_6130	gameNetEngine
-c	com/corrodinggames/rts/gameFramework/j/class_1036	com/corrodinggames/rts/gameFramework/net/UnkPacket
-c	com/corrodinggames/rts/gameFramework/j/class_1038	com/corrodinggames/rts/gameFramework/net/ReciveSocketInStream
-c	com/corrodinggames/rts/gameFramework/j/class_1039	com/corrodinggames/rts/gameFramework/net/SendSocketOutStream
-c	com/corrodinggames/rts/gameFramework/j/class_1040	com/corrodinggames/rts/gameFramework/net/ListRoomInfo
-c	com/corrodinggames/rts/gameFramework/j/class_1041	com/corrodinggames/rts/gameFramework/net/RelayForwardedSocket
-c	com/corrodinggames/rts/gameFramework/j/class_1042	com/corrodinggames/rts/gameFramework/net/RFSInStream
-c	com/corrodinggames/rts/gameFramework/j/class_1043	com/corrodinggames/rts/gameFramework/net/RFSOutStream
-c	com/corrodinggames/rts/gameFramework/j/class_1051	com/corrodinggames/rts/gameFramework/net/ListOperateJoinGetRoomList
-c	com/corrodinggames/rts/gameFramework/j/class_1053	com/corrodinggames/rts/gameFramework/net/HTTPService
-c	com/corrodinggames/rts/gameFramework/j/class_1057	com/corrodinggames/rts/gameFramework/net/SendErrorLogToGameDev
-c	com/corrodinggames/rts/gameFramework/j/class_1060	com/corrodinggames/rts/gameFramework/net/ListOperateAddRoom
