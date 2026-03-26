@@ -8098,6 +8098,7 @@ c	com/corrodinggames/rts/gameFramework/a/e	com/corrodinggames/rts/gameFramework/
 	f	Lcom/corrodinggames/rts/gameFramework/a/i;	C	field_4160
 	f	Lcom/corrodinggames/rts/gameFramework/a/i;	d	field_4167
 	f	Lcom/corrodinggames/rts/gameFramework/a/i;	D	field_4161
+	f	Lcom/corrodinggames/rts/gameFramework/a/i;	e	field_4168
 	f	Lcom/corrodinggames/rts/gameFramework/a/i;	E	field_4162
 	f	Lcom/corrodinggames/rts/gameFramework/a/i;	f	field_4169
 	f	Lcom/corrodinggames/rts/gameFramework/a/i;	F	field_4163
@@ -9028,6 +9029,7 @@ c	com/corrodinggames/rts/gameFramework/d/c	com/corrodinggames/rts/gameFramework/
 	f	Landroid/graphics/Paint;	w	field_4948
 	f	F	x	field_4949
 	f	[Z	y	field_4950
+	m	(Landroid/content/Context;)V	a	method_2089
 	m	(FFF)V	a	method_2091
 	m	(FFFF)Lcom/corrodinggames/rts/gameFramework/d/e;	a	method_2092
 	m	(FFFFF)V	a	method_2093
