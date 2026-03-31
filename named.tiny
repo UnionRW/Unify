@@ -296,6 +296,11 @@ c	com/corrodinggames/rts/game/class_324	com/corrodinggames/rts/game/Player
 	m	()I	method_544	getNullSite
 	m	()I	method_545	m369H
 c	com/corrodinggames/rts/game/class_325	com/corrodinggames/rts/game/TeamColorsHueType
+	f	Lcom/corrodinggames/rts/game/class_325;	field_1472	pureGreen
+	f	Lcom/corrodinggames/rts/game/class_325;	field_1473	hueAdd
+	f	Lcom/corrodinggames/rts/game/class_325;	field_1474	hueNew
+	f	Lcom/corrodinggames/rts/game/class_325;	field_1475	hueShift
+	f	Lcom/corrodinggames/rts/game/class_325;	field_1476	disabled
 c	com/corrodinggames/rts/game/class_327	com/corrodinggames/rts/game/Relation
 	f	Lcom/corrodinggames/rts/game/class_327;	field_1483	own
 	f	Lcom/corrodinggames/rts/game/class_327;	field_1484	ally
@@ -1462,6 +1467,9 @@ c	com/corrodinggames/rts/game/units/custom/class_587	com/corrodinggames/rts/game
 	f	Lcom/corrodinggames/rts/game/units/custom/class_588;	field_3580	autoTriggerCheckRate
 	f	Lcom/corrodinggames/rts/game/units/custom/a/class_465;	field_3581	customActionConfig
 c	com/corrodinggames/rts/game/units/custom/class_588	com/corrodinggames/rts/game/units/custom/AutoTriggerCheckRate
+	f	Lcom/corrodinggames/rts/game/units/custom/class_588;	field_3582	everyFrame
+	f	Lcom/corrodinggames/rts/game/units/custom/class_588;	field_3583	every4Frames
+	f	Lcom/corrodinggames/rts/game/units/custom/class_588;	field_3584	every8Frames
 c	com/corrodinggames/rts/game/units/custom/class_590	com/corrodinggames/rts/game/units/custom/ActionList
 	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_3586	actionNames
 	f	Lcom/corrodinggames/rts/gameFramework/utility/class_1323;	field_3587	actionParts
