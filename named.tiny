@@ -335,6 +335,15 @@ c	com/corrodinggames/rts/game/units/a/class_349	com/corrodinggames/rts/game/unit
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)Ljava/lang/String;	method_609	getButtonTitle
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)Ljava/lang/String;	method_611	getPlaneDescription
 c	com/corrodinggames/rts/game/units/a/class_350	com/corrodinggames/rts/game/units/actions/DisplayActionType
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1557	none
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1558	rally
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1559	upgrade
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1560	queueUnit
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1561	building
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1562	action
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1563	infoOnly
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1564	infoOnlyNoBox
+	f	Lcom/corrodinggames/rts/game/units/a/class_350;	field_1565	infoOnlyStockpile
 c	com/corrodinggames/rts/game/units/a/class_351	com/corrodinggames/rts/game/units/actions/BothWayPointType
 c	com/corrodinggames/rts/game/units/a/class_352	com/corrodinggames/rts/game/units/actions/UnitBuildUnitAction
 	f	Lcom/corrodinggames/rts/game/units/class_704;	field_1581	buildUnit
@@ -1504,7 +1513,7 @@ c	com/corrodinggames/rts/game/units/custom/d/class_552	com/corrodinggames/rts/ga
 	m	(Lcom/corrodinggames/rts/game/units/custom/d/class_552;Lcom/corrodinggames/rts/game/units/custom/d/class_552;)Lcom/corrodinggames/rts/game/units/custom/d/class_552;	method_1275	merge
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_1300	limitUnitStats
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_1304	addResourceForUnit
-c	com/corrodinggames/rts/game/units/custom/d/class_553	com/corrodinggames/rts/game/units/custom/d/addAndSetResourceUnit
+c	com/corrodinggames/rts/game/units/custom/d/class_553	com/corrodinggames/rts/game/units/custom/d/LogicResourceUnit
 c	com/corrodinggames/rts/game/units/custom/e/class_556	com/corrodinggames/rts/game/units/custom/e/ResourceType
 	f	Ljava/lang/String;	field_2977	name
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)D	method_1320	getResourceCount
