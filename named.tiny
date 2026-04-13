@@ -1573,8 +1573,6 @@ c	com/corrodinggames/rts/game/units/custom/d/class_552	com/corrodinggames/rts/ga
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_1300	limitUnitStats
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	method_1304	addResourceForUnit
 c	com/corrodinggames/rts/game/units/custom/d/class_553	com/corrodinggames/rts/game/units/custom/d/LogicResourceUnit
-	m	(Lcom/corrodinggames/rts/game/units/custom/class_581;Lcom/corrodinggames/rts/gameFramework/utility/class_1297;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/d/class_553;)Lcom/corrodinggames/rts/game/units/custom/d/class_553;	a	createAddResourcesWithLogicBoolean
-	m	(Lcom/corrodinggames/rts/game/units/class_426;)V	e	add
 c	com/corrodinggames/rts/game/units/custom/e/class_556	com/corrodinggames/rts/game/units/custom/e/ResourceType
 	f	Ljava/lang/String;	field_2977	name
 	m	(Lcom/corrodinggames/rts/game/units/class_426;)D	method_1320	getResourceCount
