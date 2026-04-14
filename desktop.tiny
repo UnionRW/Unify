@@ -1,58 +1,4 @@
 tiny	2	0	official	intermediary
-c	android/graphics/RectF	android/graphics/RectF
-	f	F	a	left
-	f	F	b	top
-	f	F	c	right
-	f	F	d	bottom
-	f	Landroid/os/Parcelable$Creator;	e	CREATOR
-	m	(FFFF)V	<init>	<init>
-		p	1	f	left
-		p	2	f2	top
-		p	3	f3	right
-		p	4	f4	bottom
-	m	(Landroid/graphics/Rect;)V	<init>	<init>
-		p	1	rect	r
-	m	(Landroid/graphics/RectF;)V	<init>	<init>
-		p	1	rectF	r
-	m	()Z	a	isEmpty
-	m	(FF)V	a	offset
-		p	1	f	dx
-		p	2	f2	dy
-	m	(FFFF)V	a	set
-		p	1	f	left
-		p	2	f2	top
-		p	3	f3	right
-		p	4	f4	bottom
-	m	(Landroid/graphics/Rect;)V	a	set
-		p	1	rect	r
-	m	(Landroid/graphics/RectF;)V	a	set
-		p	1	rectF	r
-	m	(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z	a	intersects
-		p	0	rectF	a
-		p	1	rectF2	b
-	m	()F	b	width
-	m	(FF)Z	b	contains
-		p	1	f	x
-		p	2	f2	y
-	m	(FFFF)Z	b	contains
-		p	1	f	left
-		p	2	f2	top
-		p	3	f3	right
-		p	4	f4	bottom
-	m	(Landroid/graphics/RectF;)Z	b	contains
-		p	1	rectF	r
-	m	()F	c	height
-	m	(FF)V	c	union
-		p	1	f	x
-		p	2	f2	y
-	m	()F	d	centerX
-	m	()I	describeContents	describeContents
-	m	()F	e	centerY
-	m	()V	f	setEmpty
-	m	()V	g	sort
-	m	(Landroid/os/Parcel;I)V	writeToParcel	writeToParcel
-		p	1	parcel	out
-		p	2	n	flags
 c	android/graphics/Color	android/graphics/Color
 	m	(I)I	a	alpha
 	m	(III)I	a	rgb
@@ -192,6 +138,60 @@ c	android/graphics/Rect	android/graphics/Rect
 	m	()F	g	exactCenterY
 	m	()V	h	setEmpty
 	m	()Ljava/lang/String;	toString	toString
+c	android/graphics/RectF	android/graphics/RectF
+	f	F	a	left
+	f	F	b	top
+	f	F	c	right
+	f	F	d	bottom
+	f	Landroid/os/Parcelable$Creator;	e	CREATOR
+	m	(FFFF)V	<init>	<init>
+		p	1	f	left
+		p	2	f2	top
+		p	3	f3	right
+		p	4	f4	bottom
+	m	(Landroid/graphics/Rect;)V	<init>	<init>
+		p	1	rect	r
+	m	(Landroid/graphics/RectF;)V	<init>	<init>
+		p	1	rectF	r
+	m	()Z	a	isEmpty
+	m	(FF)V	a	offset
+		p	1	f	dx
+		p	2	f2	dy
+	m	(FFFF)V	a	set
+		p	1	f	left
+		p	2	f2	top
+		p	3	f3	right
+		p	4	f4	bottom
+	m	(Landroid/graphics/Rect;)V	a	set
+		p	1	rect	r
+	m	(Landroid/graphics/RectF;)V	a	set
+		p	1	rectF	r
+	m	(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z	a	intersects
+		p	0	rectF	a
+		p	1	rectF2	b
+	m	()F	b	width
+	m	(FF)Z	b	contains
+		p	1	f	x
+		p	2	f2	y
+	m	(FFFF)Z	b	contains
+		p	1	f	left
+		p	2	f2	top
+		p	3	f3	right
+		p	4	f4	bottom
+	m	(Landroid/graphics/RectF;)Z	b	contains
+		p	1	rectF	r
+	m	()F	c	height
+	m	(FF)V	c	union
+		p	1	f	x
+		p	2	f2	y
+	m	()F	d	centerX
+	m	()I	describeContents	describeContents
+	m	()F	e	centerY
+	m	()V	f	setEmpty
+	m	()V	g	sort
+	m	(Landroid/os/Parcel;I)V	writeToParcel	writeToParcel
+		p	1	parcel	out
+		p	2	n	flags
 c	android/view/KeyEvent	android/view/KeyEvent
 	m	()I	a	getMaxKeyCode
 c	com/corrodinggames/rts/appFramework/f	com/corrodinggames/rts/appFramework/class_5
@@ -4426,6 +4426,7 @@ c	com/corrodinggames/rts/game/units/custom/d/c	com/corrodinggames/rts/game/units
 	m	(II)Z	a	method_1306
 	m	(Lcom/corrodinggames/rts/game/units/am;)V	a	method_1261
 	m	(Lcom/corrodinggames/rts/game/units/am;D)V	a	method_1262
+	m	(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/d/c;)Lcom/corrodinggames/rts/game/units/custom/d/c;	a	method_1307
 	m	(II)Z	b	method_1308
 	m	(Lcom/corrodinggames/rts/game/units/am;)Z	b	method_1263
 	m	(Lcom/corrodinggames/rts/game/units/am;D)Z	b	method_1264
@@ -9083,7 +9084,6 @@ c	com/corrodinggames/rts/gameFramework/d/c	com/corrodinggames/rts/gameFramework/
 	f	Landroid/graphics/Paint;	w	field_4948
 	f	F	x	field_4949
 	f	[Z	y	field_4950
-	m	(Landroid/content/Context;)V	a	method_2089
 	m	(FFF)V	a	method_2091
 	m	(FFFF)Lcom/corrodinggames/rts/gameFramework/d/e;	a	method_2092
 	m	(FFFFF)V	a	method_2093
@@ -9093,6 +9093,7 @@ c	com/corrodinggames/rts/gameFramework/d/c	com/corrodinggames/rts/gameFramework/
 	m	(FFFI)Lcom/corrodinggames/rts/gameFramework/d/e;	a	method_2096
 	m	(FFFLcom/corrodinggames/rts/gameFramework/d/d;ZLcom/corrodinggames/rts/gameFramework/d/h;)Lcom/corrodinggames/rts/gameFramework/d/e;	a	method_2097
 	m	(FI)I	a	method_2099
+	m	(Landroid/content/Context;)V	a	method_2089
 	m	(Lcom/corrodinggames/rts/gameFramework/d/e;Lcom/corrodinggames/rts/gameFramework/w;)V	a	method_2102
 	m	(Lcom/corrodinggames/rts/gameFramework/d/h;)Lcom/corrodinggames/rts/gameFramework/d/e;	a	method_2103
 	m	(Lcom/corrodinggames/rts/gameFramework/w;I)Lcom/corrodinggames/rts/gameFramework/d/e;	a	method_2100
