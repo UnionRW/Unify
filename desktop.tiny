@@ -3659,6 +3659,7 @@ c	com/corrodinggames/rts/game/units/custom/ag	com/corrodinggames/rts/game/units/
 	m	(Lcom/corrodinggames/rts/game/units/custom/l;)V	b	method_1145
 	m	(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ab;Ljava/lang/String;Ljava/lang/String;Z)V	b	method_1117
 	m	(Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/gameFramework/a/i;	b	method_1147
+	m	(Ljava/lang/String;Ljava/lang/String;ZLcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/gameFramework/m/e;	b	method_1139
 	m	(Z)Ljava/lang/String;	b	method_1142
 	m	()V	c	method_1144
 	m	(Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/m/e;	c	method_1146
